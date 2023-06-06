@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<head>
+<title> Dead weight tester  </title>
+<meta charset="ISO-8859-1">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" > -->
+    <link rel="stylesheet" href=" https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
+   <link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/mainPage.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+
+<style>
+@font-face{
+ font-family:'digital-clock-font';
+ src: url('font/digital-7.ttf');
+}
+
+
+
+</style>
+<body bgproperties="fixed">
+
+
+	
+<div  class="row container-fluid" id="mainDiv">
+<div class="col-lg-4" id="main-div">
+				<div class="panel panel-primary">
+	      			<div class="panel-heading bg-info" id="panelHeading1"><center id="centerText">CONFIGURATION OF ROTAMETER</center>
+	      			</div>
+	     			<div class="panel-body" id="main-div-conf">
+	     			<div class="row" id="sub-main-div">
+	     			
+	     			</div>
+	     			</div>
+	     		</div>
+	   	</div>
+<div class="col-lg-8" id="canvas">
+	             <div class="panel panel-primary">
+	      			<div class="panel-heading bg-info" id="panelHeading2"><center id="centerText">ROTAMETER DIAGRAM</center>
+	      			</div>
+	      			<label  id="counter"></label>
+	      			<div class="panel-body" id="canvas-div" >
+	      			<img src="images/rotameter.jpeg" " width="900" height="800">
+	      			</div>
+
+	   			</div>
+	       </div>
+	
+	        
+	        
+	</div>
+	
+	<footer>
+Copyrights &copy; COEP - Virtual Lab
+</footer>
 </body>
+
+<!-- https://code.jquery.com/jquery-3.5.1.js -->
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+<script type="text/javascript" src="lib/raphael.js"></script>
+<script type="text/javascript" src="lib/raphael.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script type="text/javascript" src="src/mainPage.js"></script>
+<script type="text/javascript" src="src/mimic.js"></script>
+
+
+
 </html>
