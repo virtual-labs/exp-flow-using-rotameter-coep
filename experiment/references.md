@@ -1,5 +1,5 @@
 ### References
 
-1. [PIC series Mazidi](http://www.staroceans.org/kernel-and-driver/PIC%20Microcontroller%20and%20Embedded%20Systems%20Using%20ASM%20%26%20C%20for%20PIC18.pdf)
+1. [Measurement of flow using a Rotameter](https://drive.google.com/drive/folders/1sMK2KVvigkQVQd7EDRYq-kNlgDYxf39u?usp=sharing)
 
-2. [SDCC compiler guide](https://sdcc.sourceforge.net/doc/sdccman.pdf)
+2. [Rotameter](https://en.wikipedia.org/wiki/Rotameter)
