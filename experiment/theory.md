@@ -43,7 +43,7 @@ The setup consists of 3-30 LPM glass tube Rotameter, 0.50 HP Monoblock pump with
 - It is not apt for pulsating services.
 - It is restricted to little pipe services.
 - It is restricted to low temperatures.
-- Its accuracy is ± 1/2 to 10%.
+- Its accuracy is &plusmn; 1/2 to 10%.
 
 **Applications** 
 - The rotameter is used in process industries.
