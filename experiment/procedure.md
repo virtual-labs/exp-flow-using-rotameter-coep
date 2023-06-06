@@ -1,11 +1,9 @@
 ### Procedure
 
-1. First user must enter the PWM frequency at which time timer will operate.
-2. Then he/she must select the duty cycle of the PWM signal.
-3. After this, the code should be generated using the generate button.
-4. Then check the code by using the compile option and check terminal window for errors.
-5. Upload the simulation in simulation window by clicking the execute button.
-6. Start the simulation by clicking the start button on scope.
-7. User can now change the PWM frequency or duty cycle as desired.
-
-NOTE: the simulation will pause at the time of changing the frequency or duty cycle.
+- Fill the sump tank with water.
+- Open the SV valve (solenoid valve). 
+- Switch on the pump and change the flow with the help of variable frequency drive VFD.
+- Allow the unit to come to a steady state as indicated by constant position of the float in Rotameter.
+- After steady state is reached record the flow rate indicated on the scale of the Rotameter.
+- Take the reading for 1 min and find the length of water in side glass for different flow rates.
+- Repeat the above for at least six-seven runs starting from the minimum flow rate and going to a maximum value.
