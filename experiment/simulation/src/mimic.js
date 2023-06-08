@@ -24,8 +24,8 @@ function mimic(pipeSize, fluidType) {
 
 	var float_ani = paper.path('M' + (x) + ' ' + (y + 50) + 'l 0 0  ');
 
-	pump_Draw(x, y);
-	Float(x + 485, y + 380);
+	pump_Draw(x, y-30);
+	Float(x + 485, y + 360);
 
 	var img = paper.image("images/knob1.png", (x - 85), (y + 500), 70, 70);
 
@@ -35,14 +35,14 @@ function mimic(pipeSize, fluidType) {
 
 
 
-	var pump_circle = paper.circle(x - 50, y + 650, 50).attr({ 'stroke': 'black', 'stroke-width': '1.5', 'fill': 'white' });
+	var pump_circle = paper.circle(x - 50, y + 620, 50).attr({ 'stroke': 'black', 'stroke-width': '1.5', 'fill': 'white' });
 
 
 	if (pipeSize == 50) {
 		min1 = 58.33; max1 = 583.33;
 		baseDiagram(x + 200, y);
 		scale_Margin(x + 200, y);
-		limit = 300;
+		limit = 280;
 	}
 	else if (pipeSize == 40) {
 		min1 = 31.66; max1 = 316.66;
@@ -65,7 +65,7 @@ function mimic(pipeSize, fluidType) {
 
 
 	var sv_Valve = paper.path(
-		'M' + (x + 50) + ' ' + (y + 650) + 'l -15 -15 l 0 30 l 30 -30 l 0 30 l -15 -15 l 0 -25 l -10 0 l 0 -8 l 20 0 l 0 8 l -10 0')
+		'M' + (x + 50) + ' ' + (y + 620) + 'l -15 -15 l 0 30 l 30 -30 l 0 30 l -15 -15 l 0 -25 l -10 0 l 0 -8 l 20 0 l 0 8 l -10 0')
 		.attr({
 			'stroke': 'black',
 			'stroke-width': '2',
@@ -154,16 +154,16 @@ function mimic(pipeSize, fluidType) {
 	mag_zero(x, y);
 	function mag_zero(x, y) {
 		y2 = 50;
-		paper.rect(x + 130, y2 + 490, 70, 40).attr({ 'stroke-width': '2', 'fill': 'pink' }).toFront();
-		txt13 = paper.text(x + 165, y2 + 510, 0).attr({ 'font-size': 20 });
+		paper.rect(x + 130, y2 + 460, 70, 40).attr({ 'stroke-width': '2', 'fill': 'pink' }).toFront();
+		txt13 = paper.text(x + 165, y2 + 475, 0).attr({ 'font-size': 20 });
 	}
 	
 	
 	function flow_Calculation(x, y) {
 		xf = (pp * (max1 - min1) / 100) + min1;
 		console.log("flow" + xf);
-		paper.rect(x + 130, y + 490, 70, 40).attr({ 'stroke-width': '2', 'fill': 'pink' }).toFront();
-		txt13 = paper.text(x + 165, y + 510, xf.toFixed(2)).attr({ 'font-size': 20 });
+		paper.rect(x + 130, y + 460, 70, 40).attr({ 'stroke-width': '2', 'fill': 'pink' }).toFront();
+		txt13 = paper.text(x + 165, y + 475, xf.toFixed(2)).attr({ 'font-size': 20 });
 
 
 	}
@@ -171,11 +171,11 @@ function mimic(pipeSize, fluidType) {
 	pumpOff(x, y);
 	function pumpOff(x, y) {
 		y2 = 50;
-		paper.circle(x - 50, y2 + 650, 20).attr({ 'stroke': 'red', 'stroke-width': '1', 'fill': 'red' });
+		paper.circle(x - 50, y2 + 620, 20).attr({ 'stroke': 'red', 'stroke-width': '1', 'fill': 'red' });
 	};
 
 	function pumpOn(x, y) {
-		paper.circle(x - 50, y + 650, 20).attr({ 'stroke': 'green', 'stroke-width': '1', 'fill': 'green' });
+		paper.circle(x - 50, y + 620, 20).attr({ 'stroke': 'green', 'stroke-width': '1', 'fill': 'green' });
 	};
 
 	// Float animation upwards 
@@ -204,7 +204,7 @@ function mimic(pipeSize, fluidType) {
 		console.log("ans d " + dh);
 		dh1 = (pp1 * (limit - 10) / 100) + 10;
 		console.log("ans d err" + dh1);
-		ans = y - 20 - dh1;
+		ans = y  - dh1;
 		console.log("ans " + ans);
 		ef = (pp1 * (max1 - min1) / 100) + min1;
 		console.log("flow error" + ef);
@@ -224,13 +224,13 @@ function mimic(pipeSize, fluidType) {
 				interFloat = (y - ans);
 				if (counter % 5 == 0) {
 					y = y + 1;
-					Float(x + 485, y + 380);
+					Float(x + 485, y + 360);
 
 
 				}
 				else {
 					y = y - 1;
-					Float(x + 485, y + 380);
+					Float(x + 485, y + 360);
 				}
 
 
@@ -262,8 +262,8 @@ function mimic(pipeSize, fluidType) {
 					+ ' <thead>'
 					+ '  <tr>'
 					+ '  <th scope="col">Percentage</th>'
-					+ '   <th scope="col">Magnetic Standard Flow(LPM)</th>'
-					+ '  <th scope="col">Rotameter Actual Flow (LPM)</th>'
+					+ '   <th scope="col">Magnetic Flow (Standard) (LPM)</th>'
+					+ '  <th scope="col">Rotameter Flow (Actual) (LPM)</th>'
 
 					+ '   </tr>'
 					+ '  </thead>'
@@ -301,7 +301,7 @@ function mimic(pipeSize, fluidType) {
 				float_ani.remove();
 				y = y + 10;
 
-				Float(x + 485, y + 380);
+				Float(x + 485, y + 360);
 
 			}
 			else {
@@ -340,28 +340,28 @@ function mimic(pipeSize, fluidType) {
 	function baseDiagram(x, y) {
 		//	paper.path('M' + (x + 160) + ' ' + (y + 700) + 'l 0 10 l -20 0 l 0 -80 l 20 0 l 0 10 l 65 0 l 0 -60  +M' + (x + 160) + ' ' + (y + 700) + 'l 215 0 l 0 -120').attr({ 'stroke': 'black', 'stroke-width': '2' });
 		//	paper.path('M' + (x + 130) + ' ' + (y + 720) + 'l 0 -100 l 35 0 l 0 10 l 50 0 l 0 -50 +M ' + (x + 130) + ' ' + (y + 720) + ' l 35  0 l 0 -10 l 220 0 l 0 -130   ').attr({ 'stroke': 'black', 'stroke-width': '2' });
-		paper.path('M' + (x + 200) + ' ' + (y + 530) + 'l 0 15 l 200 0 l 0 -15 l -200 0  l 0 -15 l 200 0 l 0 15  ')
+		paper.path('M' + (x + 200) + ' ' + (y + 486) + 'l 0 15 l 200 0 l 0 -15 l -200 0  l 0 -15 l 200 0 l 0 15  ')
 			.attr({ 'stroke': 'black', 'stroke-width': '1.5' });
 
 		paper.path('M' + (x + 150) + ' ' + (y + 30) + 'l 0 15 l 300 0 l 0 -15 l -300 0  l 0 -15 l 300 0 l 0 15  +M' + (x + 150) + ' ' + (y) + 'l 300 0 ')
 			.attr({ 'stroke': 'black', 'stroke-width': '1.5' });
 
-		paper.path('M' + (x + 225) + ' ' + (y + 580) + 'l 0 -80 l -60 -500 + M' + (x + 215) + ' ' + (y + 580) + 'l 0 -80 l -60 -500')
+		paper.path('M' + (x + 225) + ' ' + (y + 550) + 'l 0 -80 l -60 -500 + M' + (x + 215) + ' ' + (y + 550) + 'l 0 -80 l -60 -500')
 			.attr({ 'stroke': 'black', 'stroke-width': '1.5' });
-		paper.path('M' + (x + 375) + ' ' + (y + 580) + 'l 0 -80 l 60 -500 + M' + (x + 385) + ' ' + (y + 580) + 'l 0 -80 l 60 -500')
+		paper.path('M' + (x + 375) + ' ' + (y + 550) + 'l 0 -80 l 60 -500 + M' + (x + 385) + ' ' + (y + 550) + 'l 0 -80 l 60 -500')
 			.attr({ 'stroke': 'black', 'stroke-width': '1.5' });
 
-		var arc1 = paper.path('M' + (x + 215) + ' ' + (y + 580) + ' A 30 40 0 0 1 ' + (x + 186) + ' ' + (y + 622) + ' l -40 0 l 0 -15 l -15 0 l 0 86 l 15 0 l 0 -15 l 180 0');
-		var arc2 = paper.path('M' + (x + 225) + ' ' + (y + 580) + ' A 30 40 10 0 1 ' + (x + 191) + ' ' + (y + 630) + ' l -40 0 l 0 40 l 180 0 ');
+		var arc1 = paper.path('M' + (x + 215) + ' ' + (y + 550) + ' A 30 40 0 0 1 ' + (x + 186) + ' ' + (y + 592) + ' l -40 0 l 0 -15 l -15 0 l 0 86 l 15 0 l 0 -15 l 150 0');
+		var arc2 = paper.path('M' + (x + 225) + ' ' + (y + 550) + ' A 30 40 10 0 1 ' + (x + 191) + ' ' + (y + 600) + ' l -40 0 l 0 40 l 150 0 ');
 
-		var arc3 = paper.path('M' + (x + 375) + ' ' + (y + 580) + 'l 0 50 ' + 'A 30 40 10 0 1 ' + (x + 351) + ' ' + (y + 670) + ' l -30 0 ');
-		var arc4 = paper.path('M' + (x + 385) + ' ' + (y + 580) + 'l 0 50 ' + 'A 30 40 10 0 1 ' + (x + 356) + ' ' + (y + 678) + ' l -30 0 ');
+		var arc3 = paper.path('M' + (x + 375) + ' ' + (y + 550) + 'l 0 50 ' + 'A 30 40 10 0 1 ' + (x + 351) + ' ' + (y + 640) + ' l -50 0 ');
+		var arc4 = paper.path('M' + (x + 385) + ' ' + (y + 550) + 'l 0 50 ' + 'A 30 40 10 0 1 ' + (x + 356) + ' ' + (y + 648) + ' l -60 0 ');
 		var text_Magne = paper.text(x + 500, y, "Outlet").attr({ 'font-size': 20, "font-weight": "bold" });
 	};
 
 
 	// Magentic Flow Meter
-	Magnetic_flow_Meter(x - 220, y + 580);
+	Magnetic_flow_Meter(x - 220, y + 550);
 	function Magnetic_flow_Meter(x, y) {
 		paper.rect(x + 350, y, 100, 100).attr({ 'stroke-width': '2', }).toFront();
 		paper.path('M' + (x + 450) + ' ' + (y + 70) + 'l  100 0').attr({ 'stroke': 'black', 'stroke-width': '2' });
@@ -376,29 +376,29 @@ function mimic(pipeSize, fluidType) {
 	function baseDiagram40(x, y) {
 		//	paper.path('M' + (x + 160) + ' ' + (y + 700) + 'l 0 10 l -20 0 l 0 -80 l 20 0 l 0 10 l 65 0 l 0 -60  +M' + (x + 160) + ' ' + (y + 700) + 'l 215 0 l 0 -120').attr({ 'stroke': 'black', 'stroke-width': '2' });
 		//	paper.path('M' + (x + 130) + ' ' + (y + 720) + 'l 0 -100 l 35 0 l 0 10 l 50 0 l 0 -50 +M ' + (x + 130) + ' ' + (y + 720) + ' l 35  0 l 0 -10 l 220 0 l 0 -130   ').attr({ 'stroke': 'black', 'stroke-width': '2' });
-		paper.path('M' + (x + 200) + ' ' + (y + 530) + 'l 0 15 l 200 0 l 0 -15 l -200 0  l 0 -15 l 200 0 l 0 15  ')
+		paper.path('M' + (x + 200) + ' ' + (y + 486) + 'l 0 15 l 200 0 l 0 -15 l -200 0  l 0 -15 l 200 0 l 0 15  ')
 			.attr({ 'stroke': 'black', 'stroke-width': '1.5' });
 
 		paper.path('M' + (x + 150) + ' ' + (y + 70) + 'l 0 15 l 300 0 l 0 -15 l -300 0  l 0 -15 l 300 0 l 0 15  +M' + (x + 150) + ' ' + (y) + 'l 290 0 ')
 			.attr({ 'stroke': 'black', 'stroke-width': '1.5' });
 
-		paper.path('M' + (x + 225) + ' ' + (y + 580) + 'l 0 -80 l -60 -500 + M' + (x + 215) + ' ' + (y + 580) + 'l 0 -80 l -60 -500')
+		paper.path('M' + (x + 225) + ' ' + (y + 550) + 'l 0 -80 l -60 -480 + M' + (x + 215) + ' ' + (y + 550) + 'l 0 -80 l -60 -480')
 			.attr({ 'stroke': 'black', 'stroke-width': '1.5' });
-		paper.path('M' + (x + 360) + ' ' + (y + 580) + 'l 0 -80 l 60 -500 + M' + (x + 375) + ' ' + (y + 580) + 'l 0 -80 l 60 -500')
+		paper.path('M' + (x + 360) + ' ' + (y + 550) + 'l 0 -80 l 60 -480 + M' + (x + 375) + ' ' + (y + 550) + 'l 0 -80 l 60 -480')
 			.attr({ 'stroke': 'black', 'stroke-width': '1.5' });
 
-		var arc1 = paper.path('M' + (x + 215) + ' ' + (y + 580) + ' A 30 40 0 0 1 ' + (x + 186) + ' ' + (y + 622) + ' l -40 0 l 0 -15 l -15 0 l 0 86 l 15 0 l 0 -15 l 150 0');
-		var arc2 = paper.path('M' + (x + 225) + ' ' + (y + 580) + ' A 30 40 10 0 1 ' + (x + 191) + ' ' + (y + 630) + ' l -40 0 l 0 40 l 150 0 ');
+		var arc1 = paper.path('M' + (x + 215) + ' ' + (y + 550) + ' A 30 40 0 0 1 ' + (x + 186) + ' ' + (y + 592) + ' l -40 0 l 0 -15 l -15 0 l 0 86 l 15 0 l 0 -15 l 150 0');
+		var arc2 = paper.path('M' + (x + 225) + ' ' + (y + 550) + ' A 30 40 10 0 1 ' + (x + 191) + ' ' + (y + 600) + ' l -40 0 l 0 40 l 150 0 ');
 
-		var arc3 = paper.path('M' + (x + 360) + ' ' + (y + 580) + 'l 0 50 ' + 'A 30 40 10 0 1 ' + (x + 335) + ' ' + (y + 670) + ' l -35 0 ');
-		var arc4 = paper.path('M' + (x + 375) + ' ' + (y + 580) + 'l 0 50 ' + 'A 30 40 10 0 1 ' + (x + 346) + ' ' + (y + 678) + ' l -50 0 ');
+		var arc3 = paper.path('M' + (x + 360) + ' ' + (y + 550) + 'l 0 50 ' + 'A 30 40 10 0 1 ' + (x + 335) + ' ' + (y + 640) + ' l -35 0 ');
+		var arc4 = paper.path('M' + (x + 375) + ' ' + (y + 550) + 'l 0 50 ' + 'A 30 40 10 0 1 ' + (x + 346) + ' ' + (y + 648) + ' l -50 0 ');
 		var text_Magne = paper.text(x + 480, y, "Outlet").attr({ 'font-size': 20, "font-weight": "bold" });
 	};
 
 
 	// pump draw code
 	function pump_Draw(x, y) {
-		paper.circle(x - 50, y + 680, 1);
+		paper.circle(x - 50, y + 650, 1);
 
 		paper.path('M' + (x - 30) + ' ' + (y + 689) + 'l 20 20  ').attr({ 'stroke': 'black', 'stroke-width': '1.5' });
 		paper.path('M' + (x - 70) + ' ' + (y + 689) + 'l -20 20  ').attr({ 'stroke': 'black', 'stroke-width': '1.5' });
