@@ -38,14 +38,14 @@ var htm='<div class="row" >'
 	   
 	   +'<div class="row">'
 	   +'<div class="col-sm-6">'
-	   +'<label for="meter">Select Fluid Type </label>'
+	   +'<label for="meter">Select Fluid Type (Service)</label>'
 	   +'</div>'
 	   
 	   +'<div class="col-sm-6">'
 	   +'<select  class="form-control form-control-lg bg-info selectStyle"  id="fluidType">'
 	   +'<option value="0">--- Select meter --- </option>'
 //	   +'<option value="1" >Water  </option>'
-	   +'<option value="2">Oxygen</option>'
+	   +'<option value="2">Air</option>'
 	  
 	  
 	   +'</select>'
