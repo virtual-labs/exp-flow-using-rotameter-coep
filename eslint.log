@@ -1,0 +1,423 @@
+
+/home/runner/work/exp-flow-using-rotameter-coep/exp-flow-using-rotameter-coep/experiment/simulation/lib/jquery.js
+  2:58     warning  'module' is not defined                                                    no-undef
+  2:73     warning  'module' is not defined                                                    no-undef
+  2:6324   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:6580   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:7011   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:7270   warning  Empty block statement                                                      no-empty
+  2:7839   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:9709   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:11311  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:11887  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:11925  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:12343  warning  Empty block statement                                                      no-empty
+  2:12906  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:13218  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:15046  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:15317  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:15517  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:15893  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  2:16598  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:18982  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:19073  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:19133  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:20435  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:21049  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:21160  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:23420  warning  Unnecessary escape character: \[                                           no-useless-escape
+  2:23422  warning  Unnecessary escape character: \.                                           no-useless-escape
+  2:30761  warning  Empty block statement                                                      no-empty
+  2:31981  warning  Empty block statement                                                      no-empty
+  3:7811   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  3:7951   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  3:8441   warning  Empty block statement                                                      no-empty
+  3:11852  warning  Empty block statement                                                      no-empty
+  3:14493  warning  Empty block statement                                                      no-empty
+  3:24051  warning  Empty block statement                                                      no-empty
+  3:26100  warning  Move function declaration to function body root                            no-inner-declarations
+  3:30714  warning  Empty block statement                                                      no-empty
+  4:2546   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:5062   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:11701  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:13447  warning  Empty block statement                                                      no-empty
+  4:14747  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:14827  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:15164  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:15244  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:15659  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:15915  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:16492  warning  Unnecessary escape character: \/                                           no-useless-escape
+  4:17365  warning  Unnecessary escape character: \/                                           no-useless-escape
+  4:17377  warning  Unnecessary escape character: \/                                           no-useless-escape
+  4:17610  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:20109  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:22009  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:27128  warning  Empty block statement                                                      no-empty
+  4:27205  warning  Empty block statement                                                      no-empty
+  5:812    warning  'define' is not defined                                                    no-undef
+  5:824    warning  'define' is not defined                                                    no-undef
+
+/home/runner/work/exp-flow-using-rotameter-coep/exp-flow-using-rotameter-coep/experiment/simulation/lib/jquery.min.js
+  2:71     warning  'module' is not defined                                                    no-undef
+  2:86     warning  'module' is not defined                                                    no-undef
+  2:5433   warning  Unexpected control character(s) in regular expression: \x1f, \x1f          no-control-regex
+  2:5916   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:6170   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:6614   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:7404   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:9497   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:9807   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:11608  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:12183  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:12221  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:13234  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:13546  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:15374  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:15645  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:15843  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:16217  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  2:16907  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:18727  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:18827  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:18887  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:19071  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:20240  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:21514  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:21625  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:23791  warning  Unnecessary escape character: \/                                           no-useless-escape
+  2:33395  warning  Empty block statement                                                      no-empty
+  2:37269  warning  Unnecessary escape character: \/                                           no-useless-escape
+  2:38490  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:38606  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:39234  warning  Empty block statement                                                      no-empty
+  2:46727  warning  Unnecessary escape character: \/                                           no-useless-escape
+  2:49033  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:50593  warning  Empty block statement                                                      no-empty
+  2:58406  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:59575  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:65215  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:66958  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:67024  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:67328  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:67394  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:67801  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:68078  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:73449  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:75043  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:75823  warning  'r.href' is assigned to itself                                             no-self-assign
+  2:80414  warning  Empty block statement                                                      no-empty
+  2:83525  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:87869  warning  'define' is not defined                                                    no-undef
+  2:87881  warning  'define' is not defined                                                    no-undef
+
+/home/runner/work/exp-flow-using-rotameter-coep/exp-flow-using-rotameter-coep/experiment/simulation/lib/raphael.js
+  5800:60  error  Parsing error: Deleting local variable in strict mode
+
+/home/runner/work/exp-flow-using-rotameter-coep/exp-flow-using-rotameter-coep/experiment/simulation/lib/raphael.min.js
+  1:66     warning  'module' is not defined                                                                                                                          no-undef
+  1:112    warning  'define' is not defined                                                                                                                          no-undef
+  1:123    warning  'define' is not defined                                                                                                                          no-undef
+  1:161    warning  'exports' is not defined                                                                                                                         no-undef
+  1:1566   warning  'DocumentTouch' is not defined                                                                                                                   no-undef
+  1:2001   warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:2017   warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:2033   warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:2052   warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:2081   warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:2110   warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:2126   warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:2145   warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:2174   warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:2203   warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:2219   warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:2238   warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:2346   warning  Unnecessary escape character: \)                                                                                                                 no-useless-escape
+  1:3257   warning  Unexpected control character(s) in regular expression: \x09, \x0a, \x0b, \x0c, \x0d, \x09, \x0a, \x0b, \x0c, \x0d                                no-control-regex
+  1:3582   warning  Unexpected control character(s) in regular expression: \x09, \x0a, \x0b, \x0c, \x0d, \x09, \x0a, \x0b, \x0c, \x0d, \x09, \x0a, \x0b, \x0c, \x0d  no-control-regex
+  1:3756   warning  Unnecessary escape character: \-                                                                                                                 no-useless-escape
+  1:4055   warning  Unexpected control character(s) in regular expression: \x09, \x0a, \x0b, \x0c, \x0d, \x09, \x0a, \x0b, \x0c, \x0d, \x09, \x0a, \x0b, \x0c, \x0d  no-control-regex
+  1:4222   warning  Unnecessary escape character: \-                                                                                                                 no-useless-escape
+  1:4521   warning  Unexpected control character(s) in regular expression: \x09, \x0a, \x0b, \x0c, \x0d, \x09, \x0a, \x0b, \x0c, \x0d                                no-control-regex
+  1:4539   warning  Unnecessary escape character: \-                                                                                                                 no-useless-escape
+  1:4856   warning  Unexpected control character(s) in regular expression: \x09, \x0a, \x0b, \x0c, \x0d, \x09, \x0a, \x0b, \x0c, \x0d                                no-control-regex
+  1:5154   warning  Unnecessary escape character: \)                                                                                                                 no-useless-escape
+  1:7857   warning  'ActiveXObject' is not defined                                                                                                                   no-undef
+  1:7931   warning  'createPopup' is not defined                                                                                                                     no-undef
+  1:19015  warning  Expected a 'break' statement before 'default'                                                                                                    no-fallthrough
+  1:20113  warning  Expected a 'break' statement before 'default'                                                                                                    no-fallthrough
+  1:20421  warning  Expected a 'break' statement before 'default'                                                                                                    no-fallthrough
+  1:24342  warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:35757  warning  't' is defined but never used                                                                                                                    no-unused-vars
+  1:49075  warning  'r' is defined but never used                                                                                                                    no-unused-vars
+  1:50549  warning  'i' is defined but never used                                                                                                                    no-unused-vars
+  1:50598  warning  'r' is defined but never used                                                                                                                    no-unused-vars
+  1:52666  warning  Unnecessary escape character: \}                                                                                                                 no-useless-escape
+  1:53074  warning  Empty block statement                                                                                                                            no-empty
+  1:53754  warning  Unnecessary escape character: \)                                                                                                                 no-useless-escape
+  1:60967  warning  Unnecessary escape character: \-                                                                                                                 no-useless-escape
+  1:72245  warning  Unnecessary escape character: \-                                                                                                                 no-useless-escape
+  1:72515  warning  Unnecessary escape character: \(                                                                                                                 no-useless-escape
+  1:72517  warning  Unnecessary escape character: \)                                                                                                                 no-useless-escape
+  1:75570  warning  Expected a conditional expression and instead saw an assignment                                                                                  no-cond-assign
+  1:77369  warning  Expected a 'break' statement before 'case'                                                                                                       no-fallthrough
+  1:77405  warning  Expected a 'break' statement before 'case'                                                                                                       no-fallthrough
+  1:77447  warning  Expected a 'break' statement before 'case'                                                                                                       no-fallthrough
+  1:77582  warning  Expected a 'break' statement before 'case'                                                                                                       no-fallthrough
+  1:77619  warning  Expected a 'break' statement before 'case'                                                                                                       no-fallthrough
+  1:77661  warning  Expected a 'break' statement before 'case'                                                                                                       no-fallthrough
+  1:79325  warning  Expected a 'break' statement before 'case'                                                                                                       no-fallthrough
+  1:79783  warning  Expected a 'break' statement before 'case'                                                                                                       no-fallthrough
+  1:79973  warning  Expected a 'break' statement before 'default'                                                                                                    no-fallthrough
+  1:80032  warning  Unnecessary escape character: \-                                                                                                                 no-useless-escape
+  1:89485  warning  'r' is defined but never used                                                                                                                    no-unused-vars
+  1:89543  warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:89545  warning  Unnecessary escape character: \/                                                                                                                 no-useless-escape
+  1:90733  warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:90735  warning  Unnecessary escape character: \^                                                                                                                 no-useless-escape
+  1:90739  warning  Unnecessary escape character: \[                                                                                                                 no-useless-escape
+  1:90741  warning  Unnecessary escape character: \-                                                                                                                 no-useless-escape
+  1:90780  warning  Unnecessary escape character: \.                                                                                                                 no-useless-escape
+  1:90782  warning  Unnecessary escape character: \/                                                                                                                 no-useless-escape
+  1:91000  warning  Do not access Object.prototype method 'hasOwnProperty' from target object                                                                        no-prototype-builtins
+
+/home/runner/work/exp-flow-using-rotameter-coep/exp-flow-using-rotameter-coep/experiment/simulation/src/animate.js
+   6:2   warning  'paper' is not defined    no-undef
+   6:14  warning  'Raphael' is not defined  no-undef
+   8:16  warning  'paper' is not defined    no-undef
+   9:13  warning  'paper' is not defined    no-undef
+  17:1   warning  Mixed spaces and tabs     no-mixed-spaces-and-tabs
+  18:1   warning  Mixed spaces and tabs     no-mixed-spaces-and-tabs
+  22:1   warning  Mixed spaces and tabs     no-mixed-spaces-and-tabs
+  26:1   warning  Mixed spaces and tabs     no-mixed-spaces-and-tabs
+  27:1   warning  Mixed spaces and tabs     no-mixed-spaces-and-tabs
+  28:1   warning  Mixed spaces and tabs     no-mixed-spaces-and-tabs
+  29:1   warning  Mixed spaces and tabs     no-mixed-spaces-and-tabs
+  30:1   warning  Mixed spaces and tabs     no-mixed-spaces-and-tabs
+  31:1   warning  Mixed spaces and tabs     no-mixed-spaces-and-tabs
+  32:1   warning  Mixed spaces and tabs     no-mixed-spaces-and-tabs
+  33:3   warning  Unnecessary semicolon     no-extra-semi
+
+/home/runner/work/exp-flow-using-rotameter-coep/exp-flow-using-rotameter-coep/experiment/simulation/src/mainPage.js
+  16:5   warning  'weight' is assigned a value but never used          no-unused-vars
+  17:6   warning  'meter' is assigned a value but never used           no-unused-vars
+  18:5   warning  'cylinderPiston' is assigned a value but never used  no-unused-vars
+  21:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  22:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  23:2   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  24:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  25:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  26:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  29:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  30:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  34:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  35:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  36:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  37:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  38:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  39:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  40:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  41:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  42:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  43:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  44:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  45:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  46:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  48:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  49:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  50:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  51:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  52:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  53:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  54:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  55:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  69:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  70:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  70:5   warning  '$' is not defined                                   no-undef
+  71:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  72:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  72:5   warning  '$' is not defined                                   no-undef
+  74:2   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  74:6   warning  'pipeSize' is not defined                            no-undef
+  74:15  warning  '$' is not defined                                   no-undef
+  75:2   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  75:6   warning  'fluidType' is not defined                           no-undef
+  75:16  warning  '$' is not defined                                   no-undef
+  80:2   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  80:38  warning  'pipeSize' is not defined                            no-undef
+  81:2   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  81:39  warning  'fluidType' is not defined                           no-undef
+  82:2   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  83:2   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  83:5   warning  '$' is not defined                                   no-undef
+  84:2   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  84:5   warning  '$' is not defined                                   no-undef
+  85:2   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+  85:7   warning  'mimic' is not defined                               no-undef
+  85:13  warning  'pipeSize' is not defined                            no-undef
+  85:22  warning  'fluidType' is not defined                           no-undef
+  86:1   warning  Mixed spaces and tabs                                no-mixed-spaces-and-tabs
+
+/home/runner/work/exp-flow-using-rotameter-coep/exp-flow-using-rotameter-coep/experiment/simulation/src/mimic.js
+    3:10   warning  'mimic' is defined but never used                no-unused-vars
+    4:18   warning  'Raphael' is not defined                         no-undef
+   11:2    warning  'r' is not defined                               no-undef
+   12:2    warning  'count' is not defined                           no-undef
+   13:2    warning  'sv_Alert' is not defined                        no-undef
+   14:2    warning  'off_check' is not defined                       no-undef
+   15:13   warning  'pipeSize' is assigned to itself                 no-self-assign
+   16:14   warning  'fluidType' is assigned to itself                no-self-assign
+   17:2    warning  'flowJson' is not defined                        no-undef
+   18:2    warning  'arrayJson' is not defined                       no-undef
+   19:2    warning  'masterJson' is not defined                      no-undef
+   20:2    warning  'limit' is not defined                           no-undef
+   42:3    warning  'min1' is not defined                            no-undef
+   42:17   warning  'max1' is not defined                            no-undef
+   45:3    warning  'limit' is not defined                           no-undef
+   48:3    warning  'min1' is not defined                            no-undef
+   48:17   warning  'max1' is not defined                            no-undef
+   51:3    warning  'limit' is not defined                           no-undef
+   54:3    warning  'min1' is not defined                            no-undef
+   54:17   warning  'max1' is not defined                            no-undef
+   57:3    warning  'min1' is not defined                            no-undef
+   57:16   warning  'max1' is not defined                            no-undef
+   64:3    warning  Unnecessary semicolon                            no-extra-semi
+   75:17   warning  'x' is defined but never used                    no-unused-vars
+   75:20   warning  'y' is defined but never used                    no-unused-vars
+   81:3    warning  Unnecessary semicolon                            no-extra-semi
+   84:26   warning  'event' is defined but never used                no-unused-vars
+   85:3    warning  'sv_Alert' is not defined                        no-undef
+   95:6    warning  'selectedRange' is already defined               no-redeclare
+  100:22   warning  'event' is defined but never used                no-unused-vars
+  103:3    warning  'count' is not defined                           no-undef
+  103:11   warning  'count' is not defined                           no-undef
+  112:8    warning  'r' is not defined                               no-undef
+  113:5    warning  'r' is not defined                               no-undef
+  113:9    warning  'r' is not defined                               no-undef
+  114:38   warning  'r' is not defined                               no-undef
+  125:23   warning  'event' is defined but never used                no-unused-vars
+  127:7    warning  'r' is not defined                               no-undef
+  128:4    warning  'r' is not defined                               no-undef
+  128:8    warning  'r' is not defined                               no-undef
+  129:37   warning  'r' is not defined                               no-undef
+  130:4    warning  'count' is not defined                           no-undef
+  130:12   warning  'count' is not defined                           no-undef
+  155:23   warning  'y' is defined but never used                    no-unused-vars
+  156:3    warning  'y2' is not defined                              no-undef
+  157:23   warning  'y2' is not defined                              no-undef
+  158:3    warning  'txt13' is not defined                           no-undef
+  158:31   warning  'y2' is not defined                              no-undef
+  163:3    warning  'xf' is not defined                              no-undef
+  163:15   warning  'max1' is not defined                            no-undef
+  163:22   warning  'min1' is not defined                            no-undef
+  163:37   warning  'min1' is not defined                            no-undef
+  164:24   warning  'xf' is not defined                              no-undef
+  166:3    warning  'txt13' is not defined                           no-undef
+  166:40   warning  'xf' is not defined                              no-undef
+  172:22   warning  'y' is defined but never used                    no-unused-vars
+  173:3    warning  'y2' is not defined                              no-undef
+  174:24   warning  'y2' is not defined                              no-undef
+  175:3    warning  Unnecessary semicolon                            no-extra-semi
+  179:3    warning  Unnecessary semicolon                            no-extra-semi
+  182:29   warning  'event' is defined but never used                no-unused-vars
+  189:7    warning  'sv_Alert' is not defined                        no-undef
+  202:3    warning  'pp1' is not defined                             no-undef
+  203:3    warning  'dh' is not defined                              no-undef
+  203:15   warning  'limit' is not defined                           no-undef
+  204:26   warning  'dh' is not defined                              no-undef
+  205:3    warning  'dh1' is not defined                             no-undef
+  205:10   warning  'pp1' is not defined                             no-undef
+  205:17   warning  'limit' is not defined                           no-undef
+  206:29   warning  'dh1' is not defined                             no-undef
+  207:14   warning  'dh1' is not defined                             no-undef
+  209:3    warning  'ef' is not defined                              no-undef
+  209:9    warning  'pp1' is not defined                             no-undef
+  209:16   warning  'max1' is not defined                            no-undef
+  209:23   warning  'min1' is not defined                            no-undef
+  209:38   warning  'min1' is not defined                            no-undef
+  210:30   warning  'ef' is not defined                              no-undef
+  217:3    warning  'counter' is not defined                         no-undef
+  218:7    warning  'interFloat' is assigned a value but never used  no-unused-vars
+  220:3    warning  'floatInt' is not defined                        no-undef
+  225:9    warning  'counter' is not defined                         no-undef
+  239:19   warning  'floatInt' is not defined                        no-undef
+  240:5    warning  'off_check' is not defined                       no-undef
+  246:5    warning  'flowJson' is not defined                        no-undef
+  247:5    warning  'flowJson' is not defined                        no-undef
+  247:22   warning  'xf' is not defined                              no-undef
+  248:5    warning  'flowJson' is not defined                        no-undef
+  248:22   warning  'ef' is not defined                              no-undef
+  249:5    warning  'flowJson' is not defined                        no-undef
+  250:27   warning  'flowJson' is not defined                        no-undef
+  251:5    warning  'arrayJson' is not defined                       no-undef
+  251:20   warning  'flowJson' is not defined                        no-undef
+  254:17   warning  'arrayJson' is not defined                       no-undef
+  255:5    warning  'masterJson' is not defined                      no-undef
+  255:23   warning  'arrayJson' is not defined                       no-undef
+  257:17   warning  'masterJson' is not defined                      no-undef
+  259:5    warning  '$' is not defined                               no-undef
+  271:25   warning  'masterJson' is not defined                      no-undef
+  273:21   warning  'masterJson' is not defined                      no-undef
+  274:21   warning  'masterJson' is not defined                      no-undef
+  275:21   warning  'masterJson' is not defined                      no-undef
+  282:5    warning  '$' is not defined                               no-undef
+  283:5    warning  '$' is not defined                               no-undef
+  288:5    warning  Unnecessary semicolon                            no-extra-semi
+  289:4    warning  'counter' is not defined                         no-undef
+  292:3    warning  Unnecessary semicolon                            no-extra-semi
+  298:3    warning  'floatDec' is not defined                        no-undef
+  308:19   warning  'floatDec' is not defined                        no-undef
+  312:3    warning  Unnecessary semicolon                            no-extra-semi
+  316:11   warning  'meter_Empty' is defined but never used          no-unused-vars
+  316:26   warning  'y' is defined but never used                    no-unused-vars
+  317:3    warning  'y1' is not defined                              no-undef
+  318:47   warning  'y1' is not defined                              no-undef
+  319:3    warning  'level' is not defined                           no-undef
+  320:35   warning  'y1' is not defined                              no-undef
+  325:3    warning  Unnecessary semicolon                            no-extra-semi
+  328:11   warning  'meter_Fill' is defined but never used           no-unused-vars
+  332:3    warning  'level' is not defined                           no-undef
+  336:3    warning  Unnecessary semicolon                            no-extra-semi
+  354:7    warning  'arc1' is assigned a value but never used        no-unused-vars
+  355:7    warning  'arc2' is assigned a value but never used        no-unused-vars
+  357:7    warning  'arc3' is assigned a value but never used        no-unused-vars
+  358:7    warning  'arc4' is assigned a value but never used        no-unused-vars
+  359:7    warning  'text_Magne' is assigned a value but never used  no-unused-vars
+  360:3    warning  Unnecessary semicolon                            no-extra-semi
+  368:103  warning  Unnecessary semicolon                            no-extra-semi
+  370:7    warning  'text_M' is assigned a value but never used      no-unused-vars
+  372:7    warning  'text_Magne' is already defined                  no-redeclare
+  373:7    warning  'text_Magne' is already defined                  no-redeclare
+  373:7    warning  'text_Magne' is assigned a value but never used  no-unused-vars
+  390:7    warning  'arc1' is assigned a value but never used        no-unused-vars
+  391:7    warning  'arc2' is assigned a value but never used        no-unused-vars
+  393:7    warning  'arc3' is assigned a value but never used        no-unused-vars
+  394:7    warning  'arc4' is assigned a value but never used        no-unused-vars
+  395:7    warning  'text_Magne' is assigned a value but never used  no-unused-vars
+  396:3    warning  Unnecessary semicolon                            no-extra-semi
+  406:3    warning  'pmp_text' is not defined                        no-undef
+  407:3    warning  'sv_txt' is not defined                          no-undef
+  408:3    warning  'sv_txt' is not defined                          no-undef
+  409:3    warning  'inlet_txt' is not defined                       no-undef
+  413:3    warning  Unnecessary semicolon                            no-extra-semi
+  423:3    warning  'Read_txt' is not defined                        no-undef
+  424:3    warning  'Read_txt' is not defined                        no-undef
+  425:3    warning  'Read_txt' is not defined                        no-undef
+  426:3    warning  'Read_txt' is not defined                        no-undef
+  427:3    warning  'Read_txt' is not defined                        no-undef
+  428:3    warning  'Read_txt' is not defined                        no-undef
+  429:3    warning  'Read_txt' is not defined                        no-undef
+  430:3    warning  'Read_txt' is not defined                        no-undef
+  432:3    warning  Unnecessary semicolon                            no-extra-semi
+  442:3    warning  'Read_txt' is not defined                        no-undef
+  443:3    warning  'Read_txt' is not defined                        no-undef
+  444:3    warning  'Read_txt' is not defined                        no-undef
+  445:3    warning  'Read_txt' is not defined                        no-undef
+  446:3    warning  'Read_txt' is not defined                        no-undef
+  447:3    warning  'Read_txt' is not defined                        no-undef
+  449:3    warning  'Read_txt' is not defined                        no-undef
+  451:3    warning  Unnecessary semicolon                            no-extra-semi
+
+✖ 405 problems (1 error, 404 warnings)
+  0 errors and 16 warnings potentially fixable with the `--fix` option.
+
