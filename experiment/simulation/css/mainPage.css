@@ -3,6 +3,8 @@
   margin-left:20px;
 }
 
+
+
 .slider {
   -webkit-appearance: none;
   width: 100%;
@@ -43,7 +45,7 @@ background-color:gray;
 	font-size:20px;
 }
 p{ 
-	text-align: center;
+	text-align: left;
 }
 
 input[type=range].slider {
@@ -163,3 +165,4 @@ table{
 {
 	font-size:14px;color:#fff;margin-bottom:10px;
 }
+
