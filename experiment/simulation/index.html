@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title> Dead weight tester  </title>
+<title> Rotameter </title>
 <meta charset="ISO-8859-1">
  <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" > -->
     <link rel="stylesheet" href=" https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/mainPage.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+	<link rel="stylesheet" href="css/rotameter.css">
+
 </head>
 
 <style>
@@ -22,40 +24,51 @@
  font-family:'digital-clock-font';
  src: url('font/digital-7.ttf');
 }
-
+ 
+ 
 
 
 </style>
-<body bgproperties="fixed">
+<body >
 
-
+<header>
+		<img class="COEPLogo" src='images/COEPlogo.png' />
+		<img class="VlabLogo" src='images/vlablogo.jpg' />
+		<span id="colgName">COLLEGE OF ENGINEERING, PUNE</span>		
+		
+	</header>
 	
-<div  class="row container-fluid" id="mainDiv">
-<div class="col-lg-4" id="main-div">
+<div  class="row container-fluid" id="main-div1">
+	<div class="col-lg-5" id="main-div">
 				<div class="panel panel-primary">
-	      			<div class="panel-heading bg-info" id="panelHeading1"><center id="centerText">CONFIGURATION OF ROTAMETER</center>
+	      			<div class="panel-heading " id="panelHeading1"><center id="centerText1"><h4 class="panelHeadingBold">CONFIGURATION </h4></center>
 	      			</div>
 	     			<div class="panel-body" id="main-div-conf">
 	     			<div class="row" id="sub-main-div">
 	     			
 	     			</div>
+					
 	     			</div>
+	     		
+	      			<div class="panel-body" id="calibration">
+	      			
+	      			</div>
 	     		</div>
 	   	</div>
-<div class="col-lg-8" id="canvas">
-	             <div class="panel panel-primary">
-	      			<div class="panel-heading bg-info" id="panelHeading2"><center id="centerText">ROTAMETER CHARACTERIZATION DIAGRAM</center>
+	   
+	   
+			<div class="col-lg-7" id="canvas">
+	             <div class="panel panel-primary" >
+	      			<div class="panel-heading " id="panelHeading2" ><center id="centerText2"><h4 class="panelHeadingBold"> DIAGRAM</h4></center>
 	      			</div>
 	      			<label  id="counter"></label>
 	      			<div class="panel-body" id="canvas-div" >
-	      			<img src="images/rotameter.jpeg" " width="900" height="800">
+	      			<img src="images/rotameter.jpeg" class="img-fluid" >
 	      			</div>
-
+					
+	      			
 	   			</div>
 	       </div>
-	
-	        
-	        
 	</div>
 	
 	<footer>
@@ -64,19 +77,29 @@ Copyrights &copy; COEP - Virtual Lab
 </body>
 
 <!-- https://code.jquery.com/jquery-3.5.1.js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
 <script type="text/javascript" src="lib/raphael.js"></script>
 <script type="text/javascript" src="lib/raphael.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+ 
+ 
+  <script type="text/javascript" src="src/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
 
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script type="text/javascript" src="src/mainPage.js"></script>
+
 <script type="text/javascript" src="src/mimic.js"></script>
+<script type="text/javascript" src="src/questionJson.js"></script>
+<script type="text/javascript" src="src/questions.js"></script>
+<script type="text/javascript" src="src/fualtFinding.js"></script>
 
-
-
+<script type="text/javascript" src="src/Calibration.js"></script>
+<script type="text/javascript" src="src/resultAnaylsis.js"></script>
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+<!--   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </html>
