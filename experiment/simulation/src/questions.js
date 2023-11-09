@@ -119,7 +119,7 @@
 						}
 						dataQues.corrAns = ansCount;
 						 data.corrAns = dataQues;
-						 console.log(data);
+//						 console.log(data);
 						 
 						 $("#modelMsg").html("<b class='boldTextGreen'>Test Submitted Successfully . Correct Answers Are : " + ansCount+"</b>");
 						alert("Test Submitted Successfully . Correct Answers Are : " + ansCount);
@@ -169,7 +169,7 @@
 						       $("#CalculateActualFlow").html(CalculateActualFlowStr);	 
 						      $("#canvas-div").html("");
 						      $("#panelHeadingBold").html('ROTAMETER CHARACTERIZATION DIAGRAM');
-						 mimic();
+								 mimic();
 		   					
 					}
 

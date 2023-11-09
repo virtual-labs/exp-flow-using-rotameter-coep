@@ -33,8 +33,9 @@ $('#canvas-div').removeAttr('width');
 	var id = 0;
 	pipeSize = pipeSize;
 	fluidType = fluidType;
-	var sv=0;
-	var incorrectActualInstFlow=0;
+	var sv = 0;
+	var wroFlow = 0;
+	
 	flowJson = {};
 	arrayJson = [];
 	masterJson = {};
@@ -45,7 +46,9 @@ $('#canvas-div').removeAttr('width');
 	checkAns = 0;
 	xf = 0;
 	var percent;
-	var array = []; 
+	var array = [];
+	mimic = {}; 
+	eCnt = 0;
 
 
 	var float_ani = paper.path('M' + (x) + ' ' + (y + 50) + 'l 0 0  ');
@@ -168,6 +171,11 @@ $('#canvas-div').removeAttr('width');
 	sv_Valve.click(function(event) {
 		sv_Alert = 1;
 		sv_On(x, y);
+		sv++;
+		mimic.clickSV = sv;
+		mimic.stdSv = 1;
+
+		
 	});
 
 	paper.rect(x - 70, y + 450, 50, 30).attr({ 'stroke-width': 2, 'fill': 'white' }).toFront();
@@ -282,9 +290,9 @@ $('#canvas-div').removeAttr('width');
 	{
 		
 		array.push(pp); // insert pp value in an array
-		console.log("pp array : " + array);
+//		console.log("pp array : " + array);
 		array.sort((a, b) => a - b); //sort the array in ascending order
-		console.log("sorted array : " + array);
+//		console.log("sorted array : " + array);
 			for (var i = 0; i < array.length; i++) {
 				if ((array[i] - array[i + 1]) == 0) {
 					//alert that duplicate is present
@@ -345,24 +353,20 @@ $('#canvas-div').removeAttr('width');
  				 array.splice(index, 1); 
 								}
 			alert("Turn on SV valve");
-			 dataJson = {};
-			  //dataJson.actualConfig = 1;
-			 sv++;
-			 dataJson.actualSV =1 ;
-			  dataJson.SVOff =sv ;
-			  data.mimic = dataJson;
-			 // data.resultConfig = dataJson;
-			  console.log(data);
+			sv++;
+		
 		}
 
 
 	});
 	
-	eCnt = 0;
+	
 	function error_Calculation(x,y)
 	{   
 		eCnt++;
-		console.log("err counter"+eCnt)
+		mimic.correctflow = eCnt;
+
+		
 		if (pp < 50)
 		{
 			n = 3;	
@@ -404,7 +408,7 @@ $('#canvas-div').removeAttr('width');
 		ans = y  - dh1;
 		
 		ef = (pp1 * (max1 - min1) / 100) + min1;
-		console.log("flow error" + ef);
+//		console.log("flow error" + ef);
 		dist = (pp * (dmax - dmin) / 100) + dmin;
 	
 	}
@@ -495,14 +499,14 @@ $('#canvas-div').removeAttr('width');
 				flowJson.mFlow = xf.toFixed(2);
 				flowJson.rFlow = ef.toFixed(2);
 				flowJson.perc = percent;
-				console.log("Flow " + flowJson.mFlow);
+//				console.log("Flow " + flowJson.mFlow);
 				arrayJson.push(flowJson);
 				var  tableMainDiv='';
 
-				console.log(arrayJson);
+//				console.log(arrayJson);
 				masterJson.demo = arrayJson;
 
-				console.log(masterJson);
+//				console.log(masterJson);
 				
 			masterJson.demo.sort(function(a, b){
 		  		  return a.perc - b.perc;
@@ -579,6 +583,8 @@ $('#canvas-div').removeAttr('width');
 					{ 
 						$("#CalculateActualFlow").attr("hidden",true);
 						$('#showGraph').attr('hidden',true);
+						data.Mimic = mimic;
+						console.log(data);
 						graphCreate();
 						calibration();
 					}
@@ -586,7 +592,7 @@ $('#canvas-div').removeAttr('width');
 				else{
 					alert("Please provide atleast 5 reading ");
 				}
-				console.log(masterJson);
+//				console.log(masterJson);
 				
 				
 						
@@ -596,6 +602,7 @@ $('#canvas-div').removeAttr('width');
 	function graphCreate()
 	{
 //		$("#panelHeadingBold").html("GRAPH REPRESENTATION");
+		
 		
 		 $("#centerText2").html("GRAPH");
 	var xdata=[];
@@ -716,7 +723,8 @@ $('#canvas-div').removeAttr('width');
 	$("#btnAnsCheck").click(function() {
 		
 			
-		
+			wroFlow++;
+		 mimic.innflow = wroFlow ;
 		var flowAns = $("#flowAns").val().trim();
 		if(flowAns=="")
 			{
@@ -752,14 +760,9 @@ $('#canvas-div').removeAttr('width');
 //			alert("Entered value is incorrect.Try it again... ");
 			 $("#modelMsg").html("<b class='boldTextRed'>Entered value is incorrect.Try again . </b>");
 			 $("body").css("padding","0px 0px 0px 0px");
-			 dataJson = {};
-			  //dataJson.actualConfig = 1;
-			 incorrectActualInstFlow++;
 			
-			  dataJson.incorrectActualInstFlow =incorrectActualInstFlow ;
-			  data.ActualInstFlow = dataJson;
-			 // data.resultConfig = dataJson;
-			  console.log(data);
+			
+			  
 			
 			}
 
@@ -768,7 +771,7 @@ $('#canvas-div').removeAttr('width');
 			
 //			alert("formula : Volume of the float = "+unescape('%u220F')+" / 4 Dr"+unescape('%B2')+"h ");
 			
-			 $("#modelMsg").html("<b class='boldTextBlue'>formula : Volume of the float = "+unescape('%u220F')+" / 4 Dr"+unescape('%B2')+"h</b> ");
+			 $("#modelMsg").html("<b class='boldTextBlue'>formula : Volume of the float = "+unescape('%u220F')+" / 4 (Dr"+unescape('%B2')+"h)</b> ");
 			 $("body").css("padding","0px 0px 0px 0px");
 			
 		} else {
@@ -777,7 +780,7 @@ $('#canvas-div').removeAttr('width');
 			if (flowAns == flow) {
 				checkAns = 0;
 				$("#flowAns").val('');
-				tableCreate();
+				tableCreate(); 
 				pumpOff(x, y) ;
 				if (floatMaterial == 1){
 					setTimeout(function(){meter_Empty(x+200, y)},900);
@@ -805,7 +808,7 @@ $('#canvas-div').removeAttr('width');
 
 		});
 	
-	
+		
 	
 	
 		// Magentic Flow Meter

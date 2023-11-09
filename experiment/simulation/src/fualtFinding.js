@@ -3,6 +3,7 @@ function tableCreateForFualtFinding1()
 				 var min = 0.5;
 				 var max = 10.00;
 				
+				
 				var tableMainDiv = '<h2><center>OBSERVE  READING & IDENTIFY THE FAULT</center></h2>'
 			        + '<table class="table table-bordered" >'
 					+ ' <thead>'
@@ -81,6 +82,8 @@ function tableCreateForFualtFinding1()
 
 
  var randomNumber;
+ var ent = 0;
+  fault = {};
 function fualtFinding()
 {
 	
@@ -129,6 +132,7 @@ function fualtFinding()
     $("#main-div-conf").html("<img src='images/rotameter.jpeg' class='img-fluid'>");
 	
     $("#errorSelection").change(function() {
+		
     	var selectedOption=$("#errorSelection").val();
     	console.log("selectedOption   "+selectedOption);
 //    	if(counter<=3){
@@ -136,8 +140,12 @@ function fualtFinding()
     			$("#main-div-conf").html("");
     			 $("#canvas-div").html("");
     			 $("#alertMsgBox").attr('hidden',true);
-    			 //resultAnalysis();
-    			 $("#main-div1").html("<b class='errorMsgf col-sm-12 '> Result Page inprogress .</b>");
+    			 ent++;
+    			 fault.fault = ent;
+    			 data.Fault = fault;
+    			 
+    			 resultAnalysis();
+//    			 $("#main-div1").html("<b class='errorMsgf col-sm-12 '> Result Page inprogress .</b>");
     		}
     		else{
     			$("#alertMsgBox").attr('hidden',false);

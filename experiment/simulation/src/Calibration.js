@@ -1,6 +1,9 @@
 function calibration()
 	{
-		
+	
+	calibration = {};
+	zero = 0;
+	span = 0;	
 	incorrectActualInstFlow=0;
 		htm='';
 			htm+='<div class="card" id="calibrationDiv">'
@@ -122,11 +125,15 @@ function calibration()
 			$("#calibration").html(htm);
 			
 			$("#nextFaultFinding").click(function() {
-				fualtFinding(); 
+				fualtFinding();
+				data.Calibration = calibration; 
+				console.log(data);
 			});
 			var id=0;
 			$("#zeroSubmit").click(function() {
 				console.log("in zero submit");
+				zero++;
+				calibration.zero = zero;
 				
 				
 				var flowAns = $("#zeroText").val().trim();
@@ -161,11 +168,7 @@ function calibration()
 								
 								 $("#modelMsgZero").html("<b class='boldTextRed'>Entered value is incorrect.Try again . </b>");
 								 $("body").css("padding","0px 0px 0px 0px");
-								 dataJson = {};
-								 incorrectActualInstFlow++;
-								 dataJson.incorrectActualInstFlow =incorrectActualInstFlow ;
-								  data.ActualInstFlow = dataJson;
-								  console.log(data);
+								
 								
 								}
 
@@ -204,6 +207,8 @@ function calibration()
 			$("#spanSubmit").click(function() {
 				
 				console.log("in span submit");
+				span++;
+				calibration.span = span;
 				var max=masterJson.demo[length].mFlow;
 				var min=masterJson.demo[length].rFlow;
 				var ans=min-max;
@@ -238,11 +243,7 @@ function calibration()
 									 $("#modelMsgSpan").html("<b class='boldTextRed'>Entered value is incorrect.Try again . </b>");
 									 $("body").css("padding","0px 0px 0px 0px");
 									 dataJson = {};
-									 incorrectActualInstFlow++;
-									 dataJson.incorrectActualInstFlow =incorrectActualInstFlow ;
-									  data.ActualInstFlow = dataJson;
 									
-									  console.log(data);
 					
 					}
 
