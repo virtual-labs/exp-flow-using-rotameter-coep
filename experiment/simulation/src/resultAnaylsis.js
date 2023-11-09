@@ -33,26 +33,47 @@
 	 var actualConfig = 0 ;
 	 var incorrectConfig = 0;
 	 var wrong = 0 ;
-if("corrAns" in dataJson)
+	 var correct = 0 ;
+	 var clksv = 0;
+	 var clksv1 = 0;
+	 var zero = 0;
+	 var span = 0;
+	 var fault = 0;
+	 console.log(data);
+//Basic knowledge	 
+if("corrAns" in data)
 {
-	corrans1 = dataJson.corrAns;
+	corrans1 = data.corrAns.corrAns;
 	
 }
-if("resultConfig" in dataJson || "actualConfig" in dataJson || "incorrectConfig" in dataJson)
-{
-	
-	 actualConfig =  dataJson.resultConfig.actualConfig;
- incorrectConfig=   dataJson.resultConfig.incorrectConfig;
+//configuration
+if("configure" in data){
+
+	incorrectConfig = data.configure.incorrectConfig;
+
 }	
 	
-
-
 //MIMIC click counter
-if("ActualInstFlow" in dataJson)
+if("Mimic" in data)
 {
-	wrong = dataJson.ActualInstFlow.incorrectActualInstFlow;
+	correct = data.Mimic.correctflow;
+	wrong = data.Mimic.innflow ;
+	clksv = data.Mimic.clickSV;
+	clksv1 = data.Mimic.stdSv;
 }
 
+//Calibration click
+if("Calibration" in data)
+{
+	zero = data.Calibration.zero;
+	span = data.Calibration.span;
+}
+
+//Fault finding
+if("Fault" in data)
+{
+	fault = data.Fault.fault;
+}
 
 
 
@@ -94,18 +115,18 @@ var htm='<div class="container-fluid">'
   +'          </div>'
    +'  </div>'//Col-4 close config
    +' <div class="col-sm-4">'
-   +'<h4 class="panel panel-primary"> <div class="panel-heading"><center>ANIMATION </center></div></h4>'
+   +'<h4 class="panel panel-primary"> <div class="panel-heading"><center>SIMULATION </center></div></h4>'
    +'   		 <div class="col-sm-6">'
   +'   				 <div class="panel panel-success">'
-  +'     					        <div class="panel-heading"><center><h4>SIMULATION</h4></center></div>'
+  +'     					        <div class="panel-heading"><center><h4>SV Valve Click</h4></center></div>'
   +'      							<div class="panel-body">'
   +'    									<div class="col-sm-6 border">'
   +'            								    <div class="panel-heading panel-info"><center><h4>Expected </h4></center></div>'
-  +'												<h5> <center>1</center></h5>'
+  +'												<h5> <center>'+clksv1+'</center></h5>'
   +'               							 </div>'
   +'    									<div class="col-sm-6 border">'
   +'          								   <div class="panel-heading panel-info"><center><h4>Actual </h4></center></div>'
-  +'											<h5><center>5</center></h5>'
+  +'											<h5><center>'+clksv+'</center></h5>'
   +'           								 </div>'
    +'   							</div>'
   +'  				</div>' 
@@ -116,11 +137,11 @@ var htm='<div class="container-fluid">'
   +'      							<div class="panel-body">'
   +'    									<div class="col-sm-6 border">'
   +'            								    <div class="panel-heading panel-info"><center><h4>Expected </h4></center></div>'
-  +'												<h5> <center>'+actualConfig+'</center></h5>'
+  +'												<h5> <center>'+correct+'</center></h5>'
   +'               							 </div>'
   +'    									<div class="col-sm-6 border">'
   +'          								   <div class="panel-heading panel-info"><center><h4>Actual </h4></center></div>'
-  +'											<h5><center>'+incorrectConfig+'</center></h5>'
+  +'											<h5><center>'+wrong+'</center></h5>'
   +'           								 </div>'
    +'   							</div>'
   +'  				</div>' 
@@ -132,7 +153,7 @@ var htm='<div class="container-fluid">'
 				 +'<table class="table table-bordered">'
 				   +'  <thead>'
 				   +'    <tr class="info">'
-				   +'      <th><center>COMPETENCY(TURBINE FLOW METER)</center></th>'
+				   +'      <th><center>COMPETENCY(ROTAMETER)</center></th>'
 				   +'     <th><center>STATUS</center></th>'
 				   +'    </tr>'
 				   +' </thead>'
@@ -153,7 +174,7 @@ var htm='<div class="container-fluid">'
 //				   +'  </tr>'
 				   +'  <tr>'
 				+'     <td class="info"><center>Characterization</center></td>'
-				   +'     <td class="danger"><center>Not Attained</center></td>'
+				   +'     <td class="danger"><center>Attained</center></td>'
 				   +' </tr>'
 				   +'   <tr>'
 				  +'     <td class="info"><center>Calibration</center></td>'
@@ -170,6 +191,63 @@ var htm='<div class="container-fluid">'
      +' </div>' 
    +' </div>' 
 +'  </div>'// Row Close
+//	
+  +'<h4 class="panel panel-primary"> <div class="panel-heading"><center>CALIBRATION AND FAULT FINDING </center></div></h4>'
+  +'<div class="row">'
+ +'   		 <div class="col-sm-4">'
+  +'   				 <div class="panel panel-success">'
+  +'     					        <div class="panel-heading"><center><h4>Zero Error </h4></center></div>'
+  +'      							<div class="panel-body">'
+  +'    									<div class="col-sm-6 border">'
+  +'            								    <div class="panel-heading panel-info"><center><h4>Expected </h4></center></div>'
+  +'												<h5> <center>1</center></h5>'
+  +'               							 </div>'
+  +'    									<div class="col-sm-6 border">'
+  +'          								   <div class="panel-heading panel-info"><center><h4>Actual </h4></center></div>'
+  +'											<h5><center>'+zero+'</center></h5>'
+  +'           								 </div>'
+   +'   							</div>'
+  +'  				</div>' 
+  +'          </div>'
+//   +'</div>'
+   +'   		 <div class="col-sm-4">'
+  +'   				 <div class="panel panel-success">'
+  +'     					        <div class="panel-heading"><center><h4>Span Error </h4></center></div>'
+  +'      							<div class="panel-body">'
+  +'    									<div class="col-sm-6 border">'
+  +'            								    <div class="panel-heading panel-info"><center><h4>Expected </h4></center></div>'
+  +'												<h5> <center>1</center></h5>'
+  +'               							 </div>'
+  +'    									<div class="col-sm-6 border">'
+  +'          								   <div class="panel-heading panel-info"><center><h4>Actual </h4></center></div>'
+  +'											<h5><center>'+span+'</center></h5>'
+  +'           								 </div>'
+   +'   							</div>'
+  +'  				</div>' 
+  +'          </div>'
+  
+  
+  
+  
+   +'   		 <div class="col-sm-4">'
+  +'   				 <div class="panel panel-success">'
+  +'     					        <div class="panel-heading"><center><h4>Fault Finding </h4></center></div>'
+  +'      							<div class="panel-body">'
+  +'    									<div class="col-sm-6 border">'
+  +'            								    <div class="panel-heading panel-info"><center><h4>Expected </h4></center></div>'
+  +'												<h5> <center>1</center></h5>'
+  +'               							 </div>'
+  +'    									<div class="col-sm-6 border">'
+  +'          								   <div class="panel-heading panel-info"><center><h4>Actual </h4></center></div>'
+  +'											<h5><center>'+fault+'</center></h5>'
+  +'           								 </div>'
+   +'   							</div>'
+  +'  				</div>' 
+  +'          </div>'
+   +'</div>'//calibration 
+   
+   
+   
 //LINEARITY ERROR DETECTION
 //+'<div class="container-fluid">'
 //

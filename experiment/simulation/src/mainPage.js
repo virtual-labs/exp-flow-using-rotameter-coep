@@ -90,19 +90,19 @@ var htm='<div class="row" >'
 		
 		 fluidType=$("#fluidType").val();
 		 floatMaterial=$("#floatMaterial").val();
-		 console.log(" fluidType "+fluidType);
-		  console.log(" floatMaterial "+floatMaterial);
+//		 console.log(" fluidType "+fluidType);
+//		  console.log(" floatMaterial "+floatMaterial);
 		   
 		 if((fluidType==1 && floatMaterial==1) ||(fluidType==2 && floatMaterial==2) )
 		 {
 			 $("#errorPanel").prop("hidden",true);
 			 $('#checkConfg').prop('disabled', false);
-			  dataJson = {};
+//			  dataJson = {};
 			  dataJson.actualConfig = 1;
 			
 			  dataJson.incorrectConfig = wrongCounter;
-			  data.resultConfig = dataJson;
-			  console.log(data);
+//			  data.resultConfig = dataJson;
+//			  console.log(data);
 			 
 		 }
 		 else
@@ -111,11 +111,11 @@ var htm='<div class="row" >'
 			 $('#checkConfg').prop('disabled', true);
 			  $("#validMaterialMsg").html("Selected material type is wrong . ");
 			  wrongCounter++;
-			  dataJson = {};
+//			  dataJson = {};
 			  dataJson.actualConfig = 1;
 			  dataJson.incorrectConfig =wrongCounter ;
-			  data.resultConfig = dataJson;
-			  console.log(data);
+//			  data.resultConfig = dataJson;
+//			  console.log(data);
 		 }
 	 
 	  });
@@ -126,7 +126,7 @@ var htm='<div class="row" >'
 		   pipeSize=$("#pipeSize").val();
 		   fluidType=$("#fluidType").val();
 		   floatMaterial=$("#floatMaterial").val();
-				dataJson = {};
+//				dataJson = {};
 				dataJson.pipe = pipeSize ;
 				dataJson.fluid = fluidType;
 				dataJson.material = floatMaterial;
