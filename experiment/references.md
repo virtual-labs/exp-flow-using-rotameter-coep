@@ -1,5 +1,5 @@
 ### References
 
-1. [Measurement of flow using a Rotameter](https://drive.google.com/drive/folders/1sMK2KVvigkQVQd7EDRYq-kNlgDYxf39u?usp=sharing)
-
-2. [Rotameter](https://en.wikipedia.org/wiki/Rotameter)
+1.  Flow Measuring Techniques in Steady and Pulsating Compressible Flows by Fredrik Laurantzon
+2.  Process Measurement and Analysis by Bela G. Liptak
+3.  Process Control and Optimization by Bela G. Liptak
