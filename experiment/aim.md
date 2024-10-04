@@ -1,5 +1,5 @@
 ### Aim 
-To Calibrate the rotameter
+Measurement of flow using a Rotameter
 
 ### Objectives
 - Study technique for flow measurment.
