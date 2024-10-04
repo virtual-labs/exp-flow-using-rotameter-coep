@@ -143,8 +143,8 @@ function fualtFinding()
     			 ent++;
     			 fault.fault = ent;
     			 data.Fault = fault;
-    			 
-    			 resultAnalysis();
+    			 result();
+//    			 resultAnalysis();
 //    			 $("#main-div1").html("<b class='errorMsgf col-sm-12 '> Result Page inprogress .</b>");
     		}
     		else{
