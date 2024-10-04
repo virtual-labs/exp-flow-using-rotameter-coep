@@ -25,19 +25,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": " By a Rotameter we can measure:",
+					"QC": " The operation of a rotameter is based on:",
 					"ANS": [{
 						"ANSID": false,
-						"content": "Rotation"
+						"content": "Bernoulli's principle"
 					}, {
 						"ANSID": false,
-						"content": "Viscosity "
+						"content": "Pascal's law "
 					}, {
 						"ANSID": true,
-						"content": "Flow"
+						"content": "Gravity and fluid velocity "
 					}, {
 						"ANSID": false,
-						"content": "Specific gravity"
+						"content": "Archimedes' principle"
 					}]
 					
 				}]
@@ -45,19 +45,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Which of the following represents the correct relation between area of pipes.",
+					"QC": "The float in a rotameter rises when: ",
 					"ANS": [{
 						"ANSID": true,
-						"content": "Direct proportionality"
+						"content": "Fluid velocity increases"
 					}, {
 						"ANSID": false,
-						"content": "Indirect Proportionality"
+						"content": "Fluid density increases"
 					}, {
 						"ANSID": false,
-						"content": "Equal"
+						"content": "The system pressure decreases"
 					}, {
 						"ANSID": false,
-						"content": "None of these"
+						"content": "The temperature of the fluid increases"
 					}]
 					
 				}]

@@ -139,9 +139,9 @@ function calibration()
 				var flowAns = $("#zeroText").val().trim();
 				var max=masterJson.demo[0].mFlow;
 				var min=masterJson.demo[0].rFlow;
-				var ans=min-max;
+				var ans= (min-max).toFixed(2);
 				console.log("min    "+min);
-				var ans1=ans.toFixed(2);
+				var ans1= parseFloat(ans);
 				
 				console.log("zero Answer   "+ans1);
 				
@@ -211,9 +211,9 @@ function calibration()
 				calibration.span = span;
 				var max=masterJson.demo[length].mFlow;
 				var min=masterJson.demo[length].rFlow;
-				var ans=min-max;
+				var ans= (min-max).toFixed(2);
 				console.log("min    "+min);
-				var ans1=ans.toFixed(2);
+				var ans1= parseFloat(ans);
 				console.log("span Answer   "+ans1);
 				
 				var flowAns = $("#spanText").val().trim();
@@ -282,6 +282,10 @@ function calibration()
 			
 			
 			var rotate=20;
+			var zcnt = 0;
+			var zcntW = 0;
+			var scnt = 0;
+			var scntW = 0;
 			$("#plusZero").click(function() {
 				var ydataPulse=[];
 			
@@ -292,6 +296,9 @@ function calibration()
 				var std=parseInt(temp2);
 				 console.log("masterJson.demo[0].rFlow"+masterJson.demo[0].rFlow);
 				 console.log("std "+std+" actual "+actual);
+				 zcnt++;
+				 calibration.zcor = zcnt;
+				console.log("zero counter"+zcnt);
 				 for(i=0;i< masterJson.demo.length;i++){
 						
 							 if(std==actual)
@@ -310,6 +317,7 @@ function calibration()
 								 temp= parseInt(masterJson.demo[i].rFlow)+1;
 								ydataPulse[i]=masterJson.demo[i].rFlow=temp;
 								
+								
 							 }
 						}	
 					
@@ -320,6 +328,7 @@ function calibration()
 		       
 				 rotate+=20;
 			});
+			calibration.zwor = zcnt;
 			$("#minusZero").click(function() {
 				var ydataPulse=[];
 			
@@ -330,7 +339,8 @@ function calibration()
 				var actual=parseInt(temp1);
 				var std=parseInt(temp2);
 				 console.log("std "+std+" actual "+actual);
-				
+				zcntW++;
+				calibration.zwor = zcnt; 
 				 
 				 
 					for(i=0;i< masterJson.demo.length;i++){
@@ -376,7 +386,9 @@ function calibration()
 				var stdSpan=parseInt(masterJson.demo[length].mFlow);
 
 				 console.log("std "+stdSpan+" actual "+actualSpan);
-				
+				scnt++;
+				 calibration.scor = scnt;
+				console.log("span ad - "+scnt);
 				 
 				 
 					for(i=0;i< masterJson.demo.length;i++){
@@ -526,7 +538,7 @@ function calibration()
 					});
 			});
 			
-			
+			calibration.swor = scntW;
 			$("#plusMax").click(function() {
 				var ydataPulse=[];
 				
@@ -539,7 +551,10 @@ function calibration()
 				var actualSpan=parseInt(temp1);
 				var stdSpan=parseInt(temp2);
 				 console.log(" span std "+stdSpan+" actual "+actualSpan);
+				scntW++;
+				calibration.swor = scntW;
 				
+				console.log("Span wrong"+scntW);
 				 
 				 
 					for(i=0;i< masterJson.demo.length;i++){

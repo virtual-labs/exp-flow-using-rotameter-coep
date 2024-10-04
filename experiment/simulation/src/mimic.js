@@ -407,7 +407,7 @@ $('#canvas-div').removeAttr('width');
 		
 		ans = y  - dh1;
 		
-		ef = (pp1 * (max1 - min1) / 100) + min1;
+		ef = ((pp1 * (max1 - min1) / 100) + min1).toFixed(2);
 //		console.log("flow error" + ef);
 		dist = (pp * (dmax - dmin) / 100) + dmin;
 	
@@ -497,7 +497,7 @@ $('#canvas-div').removeAttr('width');
 	{ 			
 				flowJson = {};
 				flowJson.mFlow = xf.toFixed(2);
-				flowJson.rFlow = ef.toFixed(2);
+				flowJson.rFlow = ef;
 				flowJson.perc = percent;
 //				console.log("Flow " + flowJson.mFlow);
 				arrayJson.push(flowJson);
@@ -734,7 +734,7 @@ $('#canvas-div').removeAttr('width');
 			}
 		else{
 //		console.log("ans check"+flowAns);
-		flow = ef.toFixed(2);
+		flow = parseFloat(ef);
 		if (id <= 3) {
 			
 			if (flowAns == flow) {
@@ -770,8 +770,10 @@ $('#canvas-div').removeAttr('width');
 		} else if (id == 4) {
 			
 //			alert("formula : Volume of the float = "+unescape('%u220F')+" / 4 Dr"+unescape('%B2')+"h ");
+			modelImg = '<img src="images/Formula.png" class="img-responsive" alt="Cinque Terre">'
+//            $("#MsgModal").html(modelImg);
 			
-			 $("#modelMsg").html("<b class='boldTextBlue'>formula : Volume of the float = "+unescape('%u220F')+" / 4 (Dr"+unescape('%B2')+"h)</b> ");
+			 $("#modelMsg").html(modelImg);
 			 $("body").css("padding","0px 0px 0px 0px");
 			
 		} else {
