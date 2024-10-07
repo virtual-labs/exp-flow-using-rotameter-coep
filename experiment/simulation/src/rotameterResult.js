@@ -26,9 +26,9 @@ function result(){
         "spanWrong": 1
     }
 }		
+$("#procedure-btn").prop("hidden",true);
 
-
-		 console.log(data);
+//		 console.log(data);
 //Basic knowledge	 
 if("corrAns" in data)
 {
@@ -157,7 +157,7 @@ var htm = ''
 	+ '<div class="col-md-12">'
 	+ ' <div class="panel remarkBground" >'
 	+ ' <div class="panel-body remark" ><center>Congratulations!!! <br> <b>Rotameter experiment is completed successfully!!</b>'
-	+ '<br> <b>Satisfactory performance</b></center></div>'
+	+ '<br> <b> </b></center></div>'
 	+ '</div>'
 	+ '</div>'
 
