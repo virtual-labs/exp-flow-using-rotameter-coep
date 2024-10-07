@@ -1,0 +1,65 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "By a Rotameter we can measure",
+      "answers": {
+        "a": "Specific gravity",
+        "b": "Viscosity",
+        "c": "Flow",
+        "d": "Rotation"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What are the advantages of rotameter?",
+      "answers": {
+        "a": "Has high accuracy",
+        "b": "Low cost",
+        "c": "Requires no external power or fuel",
+        "d": "All of the above"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The instrument which is not suitable for the application in automatic control scheme",
+      "answers": {
+        "a": "Rotameters",
+        "b": "Pitot static tube",
+        "c": "Rotary piston meter",
+        "d": "Orifice plate"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	
+	{
+      "question": "What is the minimum flow of rotameter?",
+      "answers": {
+        "a": "0.6 to 5 L/min",
+        "b": "0.6 to 1 L/hr",
+        "c": "5 L/min",
+        "d": "0.5 to 5 L/min"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    
+    {
+      "question": "In a rotameter, the flow rate is measured by the position of the",
+      "answers": {
+        "a": "Piston",
+        "b": " Float",
+        "c": "Needle valve",
+        "d": "Orifice plate"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+    
+	
+  ]
+}
