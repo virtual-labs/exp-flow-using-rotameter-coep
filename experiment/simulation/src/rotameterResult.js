@@ -121,13 +121,13 @@ console.log(quesPercent);
 	 faultperct = parseFloat(faultperct);
 	 console.log(faultperct);
 	
-	var zeroCal = (1/(zero+1)*100).toFixed(1);
+	var zeroCal = (1/(zero)*100).toFixed(1);
 	zeroCal = parseFloat(zeroCal);
-	console.log(zeroCal);
+	console.log("zero_"+zeroCal);
 	
-	var spanCal = (1/(span+1)*100).toFixed(1);
+	var spanCal = (1/(span)*100).toFixed(1);
 	spanCal = parseFloat(spanCal);
-	console.log(spanCal);
+	console.log("span_"+spanCal);
 	
 	var zeroPercentCal = parseFloat(zeroCalibPer)+parseFloat(zeroCal);
 	zeroPercentCal = zeroPercentCal.toFixed(1);
@@ -139,6 +139,7 @@ console.log(quesPercent);
 	spanPercentCal = parseFloat(spanPercentCal);
 	console.log(spanPercentCal);
 	
+	var calibration = zeroPercentCal+spanPercentCal;
 	
 	var totZero = parseInt(counterMasterJson.calibration.zeroCalibrationForMinusWrong)+parseInt(counterMasterJson.calibration.zeroCalibrationForWrongPlus);
 	var totSpan = parseInt(counterMasterJson.calibration.spanCalibrationForMinusWrong)+parseInt(counterMasterJson.calibration.spanCalibrationForWrongPlus);
@@ -175,34 +176,61 @@ var htm = ''
 		   +'  <tbody>'
 		   +'   <tr>'
 		   +'     <td class=""><center>Basic knowledge</center></td>'
-		   +'     <td class=""><center class="attained"> Attained</center></td>'
-		  
-		   +'  </tr>'
-		   +'  <tr>'
-		   +'     <td class=""><center>Construct wheat stone bridge circuit</center></td>'
-		   +'     <td class=""><center class="attained"> Attained</center></td>'
-		   +' </tr>'
-		   +'   <tr>'
-		  +'     <td class=""><center>Standard Calculations</center></td>'
-		   +'     <td class=""><center class="attained">Attained</center></td>'
-		  
-		   +'  </tr>'
-		   +'  <tr>'
-		+'<td class=""><center>Actual Calculations</center></td>'
-		   +'<td class=""><center class="attained">Attained</center></td>'
-		   +' </tr>'
-		   +'<tr>'
-		  +' <td class=""><center>Observation</center></td>'
-		   +'<td class=""><center class="attained"> Attained</center></td>'
-		  
-		   +'  </tr>'
+		 	if(quesPercent>=60){ 
 		   
-		    
+		   htm +='     <td class=""><center class="attained"> Attained</center></td>'
+		   }else{
+			htm +='     <td class=""><center class="NotAttained"> Not Attained</center></td>'
+		}
+		  htm +='  </tr>'
+		   +'  <tr>'
+		   +'     <td class=""><center>Simulation</center></td>'
+		  	if(simulation>=60){ 
+		   
+		   htm +='     <td class=""><center class="attained"> Attained</center></td>'
+		   }else{
+			htm +='     <td class=""><center class="NotAttained"> Not Attained</center></td>'
+			}
+		 	 htm +='  </tr>'
+		   
+		   +'   <tr>'
+		  +'     <td class=""><center>Fault Finding</center></td>'
+		  if(faultperct>=60){ 
+		   
+		   htm +='     <td class=""><center class="attained"> Attained</center></td>'
+		   }else{
+			htm +='     <td class=""><center class="NotAttained"> Not Attained</center></td>'
+			}
+		 	 htm +='  </tr>'
+		   +'  <tr>'
+			+'<td class=""><center>Zero Calculations</center></td>'
+		   if(zeroCal>=60){ 
+		   
+		   htm +='     <td class=""><center class="attained"> Attained</center></td>'
+		   }else{
+			htm +='     <td class=""><center class="NotAttained"> Not Attained</center></td>'
+			}
+		 	 htm +='  </tr>'
+		   
+		   
+		   +'<tr>'
+		  +' <td class=""><center>Span Calculations</center></td>'
+		   if(spanCal>=60){ 
+		   
+		   htm +='     <td class=""><center class="attained"> Attained</center></td>'
+		   }else{
+			htm +='     <td class=""><center class="NotAttained"> Not Attained</center></td>'
+			}
+		 	 htm +='  </tr>'
 		   +'<tr>'
 		  +' <td class=""><center>Calibration</center></td>'
-		   +'<td class=""><center class="attained"> Attained</center></td>'
-		  
-		   +'  </tr>'
+		   if(calibration>=60){ 
+		   
+		   htm +='     <td class=""><center class="attained"> Attained</center></td>'
+		   }else{
+			htm +='     <td class=""><center class="NotAttained"> Not Attained</center></td>'
+			}
+		 	 htm +='  </tr>'
 			
 		   +' </tbody>'
 		  +' </table>'

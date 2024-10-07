@@ -43,7 +43,7 @@ var htm='<div class="row" >'
 	   
 	   +'<div class="col-sm-6">'
 	   +'<select  class="form-control selectConf"  id="fluidType" style="height:auto;">'
-	   +'<option value="0">--- Select meter --- </option>'
+	   +'<option value="0">--- Select Service --- </option>'
 	   +'<option value="1" >Water  </option>'
 	   +'<option value="2">Air</option>'
 	  
