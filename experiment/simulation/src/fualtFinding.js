@@ -106,7 +106,7 @@ function fualtFinding()
 		 
 		 +'<div class="col-sm-12">'
 		 +' <select  class="form-control col-sm-12" id="errorSelection">'
-//		 +' <option  value="0">Select Error type </option>'
+		 +' <option  value="">Select Error type </option>'
 		 +' <option  value="0"> Float Weight reduces </option>'
 		 +'  <option value="1">Guided  ( Misplace )</option>'
 		
