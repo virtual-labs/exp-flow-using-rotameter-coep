@@ -88,7 +88,7 @@ function fualtFinding()
 {
 	
 	$("#centerText1").html("ROTAMETER DIAGRAM");
-	 $("#centerText2").html("FUALT FINDING ");
+	 $("#centerText2").html("FAULT FINDING ");
 	$("#main-div-conf").html("");
 	 $("#canvas-div").html("");
 	 
