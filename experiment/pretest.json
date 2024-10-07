@@ -46,7 +46,20 @@
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
+    },
+    
+    {
+      "question": "In a rotameter, the flow rate is measured by the position of the",
+      "answers": {
+        "a": "Piston",
+        "b": " Float",
+        "c": "Needle valve",
+        "d": "Orifice plate"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     }
+    
 	
   ]
 }
