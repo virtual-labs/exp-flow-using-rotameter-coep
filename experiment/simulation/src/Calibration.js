@@ -252,7 +252,7 @@ function calibration()
 					
 //					alert("formula : Volume of the float = "+unescape('%u220F')+" / 4 Dr"+unescape('%B2')+"h ");
 					
-					 $("#modelMsgSpan").html("<b class='boldTextBlue'>Formula : Minimum Actual Flow - Minimum Standard Flow </b> ");
+					 $("#modelMsgSpan").html("<b class='boldTextBlue'>Formula : Maximum Actual Flow - Maximum Standard Flow </b> ");
 					 $("body").css("padding","0px 0px 0px 0px");
 					
 				} else {
