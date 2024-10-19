@@ -1,0 +1,68 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the maximum flow rate of rotameter?",
+      "answers": {
+        "a": "50 GPM",
+        "b": "40 GPM",
+        "c": "60 GPM",
+        "d": "90 GPM"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	
+    {
+      "question": "What are the main parts of rotameter?",
+      "answers": {
+        "a": "The float",
+        "b": "the tapered metering tube and the float.",
+        "c": "The tapered metering",
+        "d": "Glass tube"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "What are the units of a rotameter?",
+      "answers": {
+        "a": "Litrers per second",
+        "b": "Litres",
+        "c": "Kg per meter cube",
+        "d": "Liters or gallons per minute"
+      },
+     
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "What is discharge coefficient?",
+      "answers": {
+        "a": "actual discharge equal to ideal discharge",
+        "b": "ratio of the ideal  discharge to the actual discharge",
+        "c": "ratio of the actual discharge to the ideal discharge",
+        "d": "actual discharge is greater than ideal discharge"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "What is flow rate?",
+      "answers": {
+        "a": "The product of flow area and flow velocity",
+        "b": "The ratio of flow area and flow velocity",
+        "c": "Equal flow area and flow velocity",
+        "d": "Greater flow area and flow velocity"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
