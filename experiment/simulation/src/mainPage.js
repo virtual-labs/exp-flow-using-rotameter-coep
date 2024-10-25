@@ -145,6 +145,23 @@ var htm='<div class="row" >'
 
 	   });
 	   
+	
+	$("#refer").click(function() { 
+
+	var refer = '';
+	refer += ''
+	+ '<h3> Configuration</h3>'
+	+ '<ol><li> Selected  pipe size is '+pipeSize+''
+	+ '<li> Selected fluid type is '+fluidType+' '
+	+ '<li>Selected float material is '+floatMaterial+' </ol>';
+	
+	$(".modal-body12").html('');
+	$(".modal-body12").html(refer);
+	
+	
+	});
+	    
+	   
 //	     $("#nextSubmit").click(function(){
 ////		   alert("ghh");
 //			 

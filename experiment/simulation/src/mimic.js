@@ -19,7 +19,7 @@ $('#canvas-div').removeAttr('width');
 		paper.setSize('80%', '80%');
 	}
 	
-
+	$("#refer").prop("hidden",false);
 	var x = 200;
 	var y = 50;
 	var color = '#3bd3eb';
@@ -635,6 +635,8 @@ $('#canvas-div').removeAttr('width');
 		console.log("Ymax "+Ymax);
 		console.log(" Rotameter & magnatic flow meter  " + graphData1);
 		Highcharts.chart('canvas-div', {
+			exporting: { enabled: true},
+			credits: { enabled: false},
 			title: {
 				text: ' Graph Magnatic Flow Meter V/S Rotameter   '
 			},

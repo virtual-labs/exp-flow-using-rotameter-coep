@@ -31,8 +31,6 @@
  font-family:'digital-clock-font';
  src: url('font/digital-7.ttf');
 }
- 
- 
 
 
 </style>
@@ -45,14 +43,19 @@
 		
 	</header>
 	
-	
-	<div class="row">
-<div  class="col-sm-10"> 
-</div>
-<div  class="col-sm-2"> 
-     <button type="button" id = "procedure-btn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Procedure
-</button>
+	 <div class="row">
+	 <div  class="col-sm-6"></div>
+		<div  class="col-sm-2">
+		<button type="button" class="btn btn-danger" style="margin-top:7px"  id = "pdfDownload" hidden>Download Result </button>
+		 </div> 
+      <div  class="col-sm-2"> 
+      <button type="button" id="refer" class="btn btn-danger " style="margin-top:7px" data-toggle="modal" data-target="#exampleModal12" hidden>Configuration</button>
+     </div>
+     <div  class="col-sm-2"> 
+     <button type="button" id = "procedure-btn" class="btn btn-primary" style="margin-top:7px" data-toggle="modal" data-target="#exampleModal"> Procedure</button>
+     </div> 
+      </div>
+     
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -72,8 +75,27 @@
     </div>
   </div>
 </div>
- </div>
- </div>	
+
+<div class="modal fade" id="exampleModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title12" id="exampleModalLabel">Message Box</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body12" style="overflow-y: scroll;height:18vh">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+<!--         <button type="button" class="btn btn-primary">OK</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
 	
 <div  class="row container-fluid" id="main-div1">
 	<div class="col-lg-5" id="main-div">
@@ -94,7 +116,7 @@
 	   	</div>
 	   
 	   
-			<div class="col-lg-7" id="canvas">
+			<div class="col-lg-7" id="canvas" style="padding: 20px;">
 	             <div class="panel panel-primary" >
 	      			<div class="panel-heading " id="panelHeading2" ><center id="centerText2"><h4 class="panelHeadingBold"> DIAGRAM</h4></center>
 	      			</div>
@@ -108,7 +130,9 @@
 	       </div>
 	</div>
 	
-	<footer>
+
+	
+<footer>
 Copyrights &copy; COEP - Virtual Lab
 </footer>
 </body>
@@ -127,6 +151,10 @@ Copyrights &copy; COEP - Virtual Lab
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script type="text/javascript" src="src/mainPage.js"></script>
 
@@ -143,37 +171,42 @@ Copyrights &copy; COEP - Virtual Lab
 <script >
 var proc = '';
 
+
+
 proc += ''
 + '<h3> Procedure</h3>'
 
 + '<h3> Configuration</h3>'
-+ '<ol><li> select pipe size , fluid type and float material according to fluid type check/click the configuration button.'
++ '<ol><li> select pipe size , fluid type and float material according to fluid type check/click the configuration button'
 + '<li>click on next level </ol>'
 
 + '<h3> Basic Knowledge</h3> '
-+ '<ol><li> Answer all the questions and click on next level.</ol>'
++ '<ol><li> Answer all the questions and click on next level</ol>'
 
 + '<h3> Simulation </h3>'
-+ '<ol><li> Open the SV valve (solenoid valve).  '
-+ '<li> Switch on the pump and change the flow with the help of variable frequency drive VFD. '
-+ '<li> Allow the unit to come to a steady state as indicated by constant position of the float in Rotameter.'
-+ '<li>After steady state is reached record the flow rate indicated on the scale of the Rotameter.'
-+ '<li>Take the reading and find the length of water in side glass for different flow rates.'
-+ '<li>Calculate the flow of rotameter and submit the answer.'
-+ '<li> Repeat the above for at least six-seven runs starting from the minimum flow rate and going to a maximum value.</ol>'
++ '<ol><li> Open the SV valve (solenoid valve)  '
++ '<li> Switch on the pump and change the flow with the help of variable frequency drive VFD '
++ '<li> Allow the unit to come to a steady state as indicated by constant position of the float in Rotameter'
++ '<li>After steady state is reached record the flow rate indicated on the scale of the Rotameter'
++ '<li>Take the reading and find the length of water in side glass for different flow rates'
++ '<li>Calculate the flow of rotameter and submit the answer'
++ '<li> Repeat the above for at least six-seven runs starting from the minimum flow rate and going to a maximum value</ol>'
 
 
 + '<h3>Calibration</h3>'
-+ '<ol><li>Calculate zero error and submit  answer. '
-+ '<li> Calculate span error and submit answer.'
-+ '<li>Adjust the zero error by clicking plus and minus buttons.'
-+ '<li> Follow above process to adjust span error.</ol>'
++ '<ol><li>Calculate zero error and submit  answer '
++ '<li> Calculate span error and submit answer'
++ '<li>Adjust the zero error by clicking plus and minus buttons'
++ '<li> Follow above process to adjust span error</ol>'
 
 + '<h3> Fault Finding</h3>'
-+ '<ol><li> Observe the shown table and select the fault accordingly.'
-+ '<li> After selecting the correct fault Result will be displayed.'
++ '<ol><li> Observe the shown table and select the fault accordingly'
++ '<li> After selecting the correct fault Result will be displayed'
 
 + '</ol>'
 
-$(".modal-body").html(proc);</script>
+
+$(".modal-body").html('');
+$(".modal-body").html(proc);
+</script>
 </html>
