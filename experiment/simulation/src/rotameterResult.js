@@ -27,6 +27,7 @@ function result(){
     }
 }		
 $("#procedure-btn").prop("hidden",true);
+$("#refer").prop("hidden",true);
 
 //		 console.log(data);
 //Basic knowledge	 
@@ -156,7 +157,7 @@ var htm = ''
 
 	+ '<div class="col-md-12">'
 	+ ' <div class="panel remarkBground" >'
-	+ ' <div class="panel-body remark" ><center>Congratulations!!! <br> <b>Rotameter experiment is completed successfully!!</b>'
+	+ ' <div class="panel-body remark" ><center> <br> <b>Rotameter experiment is completed successfully!!</b>'
 	+ '<br> <b> </b></center></div>'
 	+ '</div>'
 	+ '</div>'
@@ -492,6 +493,8 @@ let initialData = [
 //
 //// Create the pie chart
 let chart = Highcharts.chart('graph-div', {
+	exporting: { enabled: false },
+	credits: { enabled: false},
     chart: {
         type: 'pie'
     },
@@ -512,5 +515,76 @@ let chart = Highcharts.chart('graph-div', {
         }
     }
 });
+
+$("#pdfDownload").prop("hidden",false);
+	
+
+	
+	function generatePDF() {
+    // Select the div by its ID
+    const element = document.querySelector("#main-div1");
+
+    // Use html2canvas to capture the element as a canvas
+    html2canvas(element, {
+        scale: 3,  // Increase the scale for better resolution (adjustable)
+        useCORS: true // In case of cross-origin issues with external resources like images
+    }).then(function (canvas) {
+        // Convert the canvas to image data in PNG format
+        const imgData = canvas.toDataURL("image/png", 1.0); // No compression
+
+        // Initialize the PDF document in landscape mode ('l') and A4 size
+        const pdf = new jspdf.jsPDF('l', 'mm', 'a4');
+        
+        // Define the width and height for the image to fit in the landscape A4 page
+        const pdfWidth = pdf.internal.pageSize.getWidth();
+        const pdfHeight = (canvas.height * pdfWidth) / canvas.width; // Keep aspect ratio
+
+        // Define the top margin (in mm)
+        const topMargin = 10;
+
+        // Check if the image height exceeds the landscape page height minus the top margin
+        if (pdfHeight > pdf.internal.pageSize.getHeight() - topMargin) {
+            let position = 0;
+            const pageHeight = pdf.internal.pageSize.getHeight() - topMargin;
+
+            // Loop over the content to fit into multiple pages in landscape
+            while (position < canvas.height) {
+                const pageData = canvas.getContext('2d').getImageData(0, position, canvas.width, canvas.height - position);
+
+                // Create a new image element from the slice
+                const pageCanvas = document.createElement('canvas');
+                pageCanvas.width = canvas.width;
+                pageCanvas.height = canvas.height - position < pageHeight ? canvas.height - position : pageHeight;
+                pageCanvas.getContext('2d').putImageData(pageData, 0, 0);
+
+                const imgData = pageCanvas.toDataURL('image/png', 1.0);  // Avoid compression
+                
+                pdf.addImage(imgData, 'PNG', 0, topMargin, pdfWidth, (pdfWidth * pageCanvas.height) / pageCanvas.width);
+
+                position += pageHeight;
+
+                if (position < canvas.height) {
+                    pdf.addPage();
+                }
+            }
+        } else {
+            // If it fits on one page, simply add the image to the PDF in landscape with the top margin
+            pdf.addImage(imgData, 'PNG', 0, topMargin, pdfWidth, pdfHeight);
+        }
+
+        // Save the generated PDF
+        pdf.save("Rotameter_Report.pdf");
+    });
+}
+
+// Set up the button click event to generate the PDF
+$("#pdfDownload").on("click", function(){
+    generatePDF();
+});
+
+$("#pdfDownload").on("click", function(){
+//	console.log("click event generated");
+	generatePDF();
+})
 
 }

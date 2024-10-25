@@ -97,9 +97,9 @@
 
 						if (myRadio == null) {
 							flag = flag && false;
-							//alert('Please attempt all the questions');
+							alert('Please attempt all the questions');
 							$("body").css("padding","0px");
-							$("#modelMsg").html("<b class='boldTextRed'>Please attempt all the questions.</b>");
+							
 							break;
 						}
 						arr.push({
@@ -121,7 +121,7 @@
 						 data.corrAns = dataQues;
 //						 console.log(data);
 						 
-						 $("#modelMsg").html("<b class='boldTextGreen'>Test Submitted Successfully . Correct Answers Are : " + ansCount+"</b>");
+//						 $("#modelMsg").html("<b class='boldTextGreen'>Test Submitted Successfully . Correct Answers Are : " + ansCount+"</b>");
 						alert("Test Submitted Successfully . Correct Answers Are : " + ansCount);
 						
 						$("body").css("padding","0px 0px 0px 0px");
