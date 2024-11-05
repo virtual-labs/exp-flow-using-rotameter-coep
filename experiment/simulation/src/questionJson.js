@@ -6,7 +6,7 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Which among the following is the formula for volumetric flow rate?",
+					"QC": "Which among the following is the formula for volumetric flow rate?(V- Flow velocity, Q- Flow rate, A- Cross section area)",
 					"ANS": [{
 						"ANSID": false,
 						"content": "Q=V/A"
@@ -65,16 +65,16 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "The rate at which fliud flows through a closed pipe can be determined by:",
+					"QC": "Maximum diameter of float is approximately ______  ",
 					"ANS": [{
 						"ANSID": true,
-						"content": "Determine the mass flow rate or volume flow rate "
+						"content": "same as the inlet diameter of the tube"
 					}, {
 						"ANSID": false,
-						"content": "Determine the mass flow rate"
+						"content": "less than inlet diameter of the tube"
 					}, {
 						"ANSID": false,
-						"content": "Determine the volume flow rate"
+						"content": "greater than  inlet diameter of the tube"
 					}, {
 						"ANSID": false,
 						"content": "None of these"
@@ -105,19 +105,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "With the increase in pressure, the exit velocity ________",
+					"QC": "Float starts to rise in the tube ",
 					"ANS": [{
 						"ANSID": false,
-						"content": "Same"
+						"content": "when buoyant effect of fluid less than weight of the float"
 					}, {
 						"ANSID": true,
-						"content": "Decreases"
+						"content": "when buoyant effect of fluid greater than weight of the float"
 					}, {
 						"ANSID": false,
-						"content": "Increases"
+						"content": "when buoyant effect of fluid equal to weight of the float"
 					}, {
 						"ANSID": false,
-						"content": "Independent"
+						"content": "None of the these"
 					}]
 					
 				}]
