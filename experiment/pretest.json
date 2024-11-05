@@ -13,23 +13,23 @@
       "difficulty": "beginner"
     },
     {
-      "question": "What are the advantages of rotameter?",
+      "question": "The relationship between flow rate and float displacement is ",
       "answers": {
-        "a": "Has high accuracy",
-        "b": "Low cost",
-        "c": "Requires no external power or fuel",
-        "d": "All of the above"
+        "a": "Non linear",
+        "b": "Linear",
+        "c": "Exponential",
+        "d": "None of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "The instrument which is not suitable for the application in automatic control scheme",
+      "question": "Rotameter is installed  _______ direction in service line",
       "answers": {
-        "a": "Rotameters",
-        "b": "Pitot static tube",
-        "c": "Rotary piston meter",
-        "d": "Orifice plate"
+        "a": "Vertical",
+        "b": "Horizontal",
+        "c": "Any",
+        "d": "All of the above"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -37,14 +37,14 @@
 	
 	
 	{
-      "question": "What is the minimum flow of rotameter?",
+      "question": "for air flow measurement following float material is used",
       "answers": {
-        "a": "0.6 to 5 L/min",
-        "b": "0.6 to 1 L/hr",
-        "c": "5 L/min",
-        "d": "0.5 to 5 L/min"
+        "a": "Steel",
+        "b": "Glass",
+        "c": "Teflon",
+        "d": "All of the above"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     
