@@ -97,7 +97,8 @@
 
 						if (myRadio == null) {
 							flag = flag && false;
-							alert('Please attempt all the questions');
+							 $("#modelMsg").html("<b class='boldTextGreen'>Please attempt all the questions</b>");
+						
 							$("body").css("padding","0px");
 							
 							break;
@@ -121,8 +122,8 @@
 						 data.corrAns = dataQues;
 //						 console.log(data);
 						 
-//						 $("#modelMsg").html("<b class='boldTextGreen'>Test Submitted Successfully . Correct Answers Are : " + ansCount+"</b>");
-						alert("Test Submitted Successfully . Correct Answers Are : " + ansCount);
+						 $("#modelMsg").html("<b class='boldTextGreen'>Test Submitted Successfully . Correct Answers Are : " + ansCount+"</b>");
+//						alert("Test Submitted Successfully . Correct Answers Are : " + ansCount);
 						
 						$("body").css("padding","0px 0px 0px 0px");
 						 $("#centerText1").html("CALCULATION");
