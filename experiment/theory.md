@@ -27,7 +27,11 @@ The setup consists of 3-30 LPM (Liters per minute) glass tube Rotameter, 0.50 HP
 
 ![3](images/figure3.PNG)
 
-![4](images/figure4.jpeg)						
+![4](images/figure4.jpeg)	
+
+**Formulae**
+
+![4](images/Formula.png)					
 
 **Advantages** 
 - The cost of rotameter is low.
