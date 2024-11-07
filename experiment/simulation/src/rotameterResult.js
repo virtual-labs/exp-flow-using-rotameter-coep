@@ -28,6 +28,7 @@ function result(){
 }		
 $("#procedure-btn").prop("hidden",true);
 $("#refer").prop("hidden",true);
+$("#simDemo").prop("hidden",true);
 
 //		 console.log(data);
 //Basic knowledge	 
