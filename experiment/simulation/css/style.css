@@ -38,6 +38,17 @@
 	box-shadow: 0 5px #666;
 	transform: translateY(4px);
 }
+
+ .btn1 {
+        margin-left:10px;
+        margin-right: 10px;
+        margin-top:7px;
+        float:right;
+        margin-bottom:10px;
+        padding: 7px; 
+        border:none; 
+        border-radius: 5px;
+        }
 footer {
 	background: rgb(125,176,169);
 background: linear-gradient(90deg, rgba(125,176,169,1) 0%, rgba(78,109,114,1) 31%, rgba(33,44,62,1) 100%);

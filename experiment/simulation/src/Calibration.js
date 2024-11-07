@@ -232,7 +232,7 @@ function calibration()
 								if (flowAns == ans1) {
 									checkAns = 0;
 									id=0;
-									$("#spanText").val('');
+									
 									$("#spanSubmit").prop('disabled', true);
 									$("#spanText").prop('disabled', true);
 									$("#spanAnswer").attr("hidden",false);
