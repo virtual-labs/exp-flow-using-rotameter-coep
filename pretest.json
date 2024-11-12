@@ -1,0 +1,65 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "By a Rotameter we can measure",
+      "answers": {
+        "a": "Specific gravity",
+        "b": "Viscosity",
+        "c": "Flow",
+        "d": "Rotation"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The relationship between flow rate and float displacement is ",
+      "answers": {
+        "a": "Non linear",
+        "b": "Linear",
+        "c": "Exponential",
+        "d": "None of the above"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Rotameter is installed  _______ direction in service line",
+      "answers": {
+        "a": "Vertical",
+        "b": "Horizontal",
+        "c": "Any",
+        "d": "All of the above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	
+	{
+      "question": "For air flow measurement following float material is used",
+      "answers": {
+        "a": "Steel",
+        "b": "Glass",
+        "c": "Teflon",
+        "d": "All of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    
+    {
+      "question": "In a rotameter, the flow rate is measured by the position of the",
+      "answers": {
+        "a": "Piston",
+        "b": " Float",
+        "c": "Needle valve",
+        "d": "Orifice plate"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+    
+	
+  ]
+}
